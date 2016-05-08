@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/srihari/Hardware_securiy/Metastability_RO/metastable_ro/metastable_ro.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" type="array" fp_name="metastable_ro_i/axi_gpio_0_gpio2_io_o">
+      <obj_property name="ElementShortName">metastable_ro_i/axi_gpio_0_gpio2_io_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">metastable_ro_i/axi_gpio_0_gpio2_io_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="metastable_ro_i/axi_gpio_0_gpio_io_o">
+      <obj_property name="ElementShortName">metastable_ro_i/axi_gpio_0_gpio_io_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">metastable_ro_i/axi_gpio_0_gpio_io_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="metastable_ro_i/clk_wiz_0_clk_out1">
+      <obj_property name="ElementShortName">metastable_ro_i/clk_wiz_0_clk_out1</obj_property>
+      <obj_property name="ObjectShortName">metastable_ro_i/clk_wiz_0_clk_out1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="metastable_ro_i/clk_wiz_0_locked">
+      <obj_property name="ElementShortName">metastable_ro_i/clk_wiz_0_locked</obj_property>
+      <obj_property name="ObjectShortName">metastable_ro_i/clk_wiz_0_locked</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o">
+      <obj_property name="ElementShortName">metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o">
+      <obj_property name="ElementShortName">metastable_ro_i/coarse_delay_ctrl_gpio_io_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">metastable_ro_i/coarse_delay_ctrl_gpio_io_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="metastable_ro_i/axi_gpio_0_gpio_io_o1">
+      <obj_property name="ElementShortName">metastable_ro_i/axi_gpio_0_gpio_io_o1</obj_property>
+      <obj_property name="ObjectShortName">metastable_ro_i/axi_gpio_0_gpio_io_o1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="metastable_ro_i/delay_top_0_registered_data">
+      <obj_property name="ElementShortName">metastable_ro_i/delay_top_0_registered_data</obj_property>
+      <obj_property name="ObjectShortName">metastable_ro_i/delay_top_0_registered_data</obj_property>
+   </wvobject>
+</wave_config>

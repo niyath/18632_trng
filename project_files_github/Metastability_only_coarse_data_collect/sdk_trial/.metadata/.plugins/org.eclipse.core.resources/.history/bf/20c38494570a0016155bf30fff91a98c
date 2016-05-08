@@ -1,0 +1,65 @@
+//#include <stdio.h>
+#include <assert.h>
+#include <math.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <limits.h>
+#include "uartControl.h"
+
+#ifdef __linux__
+
+#include <sys/mman.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdint.h>
+#define u16 uint16_t
+
+#else
+
+#include "platform.h"
+#include <xbasic_types.h>
+#include "xparameters.h"
+
+#endif#define FEET_WIDTH 32
+#define FEET_LENGTH 256
+#define INCHES_PER_FOOT 12
+#define RES_PER_INCH 2
+#define ROAD_WIDTH (FEET_WIDTH*INCHES_PER_FOOT*RES_PER_INCH)
+#define ROAD_LENGTH (FEET_LENGTH*INCHES_PER_FOOT*RES_PER_INCH)
+#define ROAD_BUFFER_SIZE_BYTES ((ROAD_WIDTH*ROAD_LENGTH/8))
+#define ROAD_VERT_POS (ROAD_LENGTH/2)
+
+#define WORD_WIDTH 16
+#define NUM_TRIES 3
+#define WIDTH 1024
+#define HEIGHT 384
+
+#define CLOCKS_PER_SEC_ADJ (CLOCKS_PER_SEC*13333) //seem to be 10000 times as many
+
+// Divide by 16 because there are 16 pixels to a word
+// Multiply by 2 because our bram data width is 32, but we use 16
+// So this is size in bytes
+#define BUF_SIZE_BYTES ((WIDTH * HEIGHT / 8))
+#define BRAM_BASEADDR0 0x40000000
+#define BRAM_BASEADDR1 0x42000000
+
+#define NUM_REC_FRAMES 1200
+
+
+int main()
+{
+	printf("helloworld\n");
+    init_platform();
+    gpioBrightAddr = GPIO_BRIGHT_BASEADDR;
+    gpioThreshAddr = GPIO_THRESH_BASEADDR;
+
+    setupUartControl();
+
+      while (1) {
+        }
+
+    cleanup_platform();
+    return 0;
+}

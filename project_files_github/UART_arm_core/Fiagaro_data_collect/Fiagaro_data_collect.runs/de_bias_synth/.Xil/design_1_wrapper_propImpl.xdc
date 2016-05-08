@@ -1,0 +1,12 @@
+set_property SRC_FILE_INFO {cfile:/home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/Fiagaro_data_collect.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc rfile:../../../Fiagaro_data_collect.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:design_1_i/processing_system7_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/Fiagaro_data_collect.srcs/constrs_1/new/trial.xdc rfile:../../../Fiagaro_data_collect.srcs/constrs_1/new/trial.xdc id:2} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter clk_fpga_0 0.3
+set_property src_info {type:XDC file:2 line:65 export:INPUT save:INPUT read:READ} [current_design]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property src_info {type:XDC file:2 line:66 export:INPUT save:INPUT read:READ} [current_design]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property src_info {type:XDC file:2 line:67 export:INPUT save:INPUT read:READ} [current_design]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+set_property src_info {type:XDC file:2 line:68 export:INPUT save:INPUT read:READ} [current_design]
+connect_debug_port dbg_hub/clk [get_nets clk]

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="de_bias_impl" LaunchDir="/home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/Fiagaro_data_collect.runs/de_bias_impl" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream"/>
+</Runs>
+

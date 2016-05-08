@@ -1,0 +1,2 @@
+17:01:57 INFO  : Processing command line option -hwspec /home/srihari/Hardware_securiy/Metastability_final_with-PI/sdk_fix/metastable_ro_wrapper.hdf.
+17:01:59 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450

@@ -1,0 +1,67 @@
+13:33:08 **** Build of configuration Debug for project trial_delay_calib ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../trial_delay_calib_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:166:0: warning: "TEST_BUFFER_SIZE" redefined [enabled by default]
+ #define TEST_BUFFER_SIZE 100
+ ^
+../src/helloworld.c:158:0: note: this is the location of the previous definition
+ #define TEST_BUFFER_SIZE 3
+ ^
+../src/helloworld.c:170:11: warning: 'SendBuffer' defined but not used [-Wunused-variable]
+ static u8 SendBuffer[TEST_BUFFER_SIZE]; /* Buffer for Transmitting Data */
+           ^
+../src/helloworld.c:202:11: warning: 'RecvBuffer' defined but not used [-Wunused-variable]
+ static u8 RecvBuffer[TEST_BUFFER_SIZE]; /* Buffer for Receiving Data */
+           ^
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../trial_delay_calib_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/uartControl.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartControl.o" -I../../trial_delay_calib_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/uartControl.d" -MT"src/uartControl.d" -o "src/uartControl.o" "../src/uartControl.c"
+In file included from ../src/uartControl.c:8:0:
+../../trial_delay_calib_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../trial_delay_calib_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/uartControl.c: In function 'Handler_2':
+../src/uartControl.c:201:2: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+  memset(0x41220000,16,1);
+  ^
+In file included from /opt/Xilinx/SDK/2014.4/gnu/arm/lin/arm-xilinx-eabi/include/stdint.h:12:0,
+                 from /opt/Xilinx/SDK/2014.4/gnu/arm/lin/lib/gcc/arm-xilinx-eabi/4.8.3/include/stdint.h:9,
+                 from ../../trial_delay_calib_bsp/ps7_cortexa9_0/include/xil_types.h:55,
+                 from ../../trial_delay_calib_bsp/ps7_cortexa9_0/include/xuartps.h:169,
+                 from ../src/uartControl.h:2,
+                 from ../src/uartControl.c:1:
+/opt/Xilinx/SDK/2014.4/gnu/arm/lin/arm-xilinx-eabi/include/string.h:25:7: note: expected 'void *' but argument is of type 'int'
+ _PTR  _EXFUN(memset,(_PTR, int, size_t));
+       ^
+../src/uartControl.c: At top level:
+../src/uartControl.c:28:14: warning: 'Gpio' defined but not used [-Wunused-variable]
+ static XGpio Gpio; /* The Instance of the GPIO Driver */
+              ^
+Finished building: ../src/uartControl.c
+ 
+Building target: trial_delay_calib.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../trial_delay_calib_bsp/ps7_cortexa9_0/lib -o "trial_delay_calib.elf"  ./src/helloworld.o ./src/platform.o ./src/uartControl.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: trial_delay_calib.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size trial_delay_calib.elf  |tee "trial_delay_calib.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34764	   2024	  23044	  59832	   e9b8	trial_delay_calib.elf
+Finished building: trial_delay_calib.elf.size
+ 
+
+13:33:09 Build Finished (took 553ms)
+

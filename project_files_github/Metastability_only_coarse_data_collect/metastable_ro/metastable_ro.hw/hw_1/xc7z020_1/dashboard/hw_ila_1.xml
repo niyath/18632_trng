@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="ILA">
+        <Dashboard columnResizable="1" key="ILA" rowResizable="0" title="ILA">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="2" height="379"
+                layout="JideBoxLayout" vgap="6" width="164">
+                <Gadget height="78" key="Trigger Capture Status" width="164"/>
+                <Gadget height="288" key="Basic Trigger Setup" width="164">
+                    <Probe name="metastable_ro_i/delay_top_0_registered_data"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

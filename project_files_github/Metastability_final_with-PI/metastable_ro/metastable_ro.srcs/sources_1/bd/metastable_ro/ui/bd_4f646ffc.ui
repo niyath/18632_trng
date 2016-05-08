@@ -1,0 +1,122 @@
+{
+   guistr: "# # String gsaved with Nlview 6.4.10  2014-10-02 bk=1.3207 VDI=35 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 70 -defaultsOSRD
+preplace port registered_data_LED2_u21 -pg 1 -y 810 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 90 -defaultsOSRD
+preplace port registered_negedge_U14 -pg 1 -y 890 -defaultsOSRD
+preplace portBus PI_orARM_Core -pg 1 -y 1230 -defaultsOSRD
+preplace portBus uart_complete_led_G22 -pg 1 -y 540 -defaultsOSRD
+preplace portBus DIP_CLOCKS_TO_LOAD -pg 1 -y 250 -defaultsOSRD
+preplace portBus Data_output_select -pg 1 -y 820 -defaultsOSRD
+preplace portBus enable_bram_interrupt -pg 1 -y 690 -defaultsOSRD
+preplace portBus LED0_T22 -pg 1 -y 160 -defaultsOSRD
+preplace inst mux_s0_select_LFSR -pg 1 -lvl 5 -y 770 -defaultsOSRD
+preplace inst coarse_delay_ctrl -pg 1 -lvl 7 -y 1040 -defaultsOSRD
+preplace inst constant_1023 -pg 1 -lvl 1 -y 200 -defaultsOSRD
+preplace inst fine_delay_ctrl -pg 1 -lvl 7 -y 890 -defaultsOSRD
+preplace inst mux_s1_SELECT_RAW -pg 1 -lvl 5 -y 890 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 2 -y 430 -defaultsOSRD
+preplace inst MUX_DATADELAY_SELECT_OR -pg 1 -lvl 15 -y 920 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 10 -y 910 -defaultsOSRD
+preplace inst delay_top_0 -pg 1 -lvl 16 -y 880 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 10 -y 1140 -defaultsOSRD
+preplace inst uart_tranf_complete_inv -pg 1 -lvl 3 -y 680 -defaultsOSRD
+preplace inst bram_control_0 -pg 1 -lvl 7 -y 680 -defaultsOSRD
+preplace inst PI_DATA_CTRL -pg 1 -lvl 13 -y 910 -defaultsOSRD
+preplace inst not_s_equals0 -pg 1 -lvl 4 -y 780 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 8 -y 690 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -y 250 -defaultsOSRD
+preplace inst lfsr_filter_0 -pg 1 -lvl 4 -y 570 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 7 -y 150 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 12 -y 1590 -defaultsOSRD
+preplace inst ZERo -pg 1 -lvl 1 -y 300 -defaultsOSRD
+preplace inst ARM_CORE_SELECT -pg 1 -lvl 11 -y 1260 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 7 -y 300 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 8 -y 470 -defaultsOSRD
+preplace inst xlconcat_2 -pg 1 -lvl 14 -y 1690 -defaultsOSRD
+preplace inst PI_data_delay -pg 1 -lvl 11 -y 1130 -defaultsOSRD
+preplace inst lfsr_or_raw_mux -pg 1 -lvl 6 -y 780 -defaultsOSRD
+preplace inst ARM_DATA_CTRL -pg 1 -lvl 13 -y 1030 -defaultsOSRD
+preplace inst Pi_clk_delay -pg 1 -lvl 11 -y 900 -defaultsOSRD
+preplace inst c_shift_ram_0 -pg 1 -lvl 16 -y 650 -defaultsOSRD
+preplace inst MUX_CLKDELAY_SELECT_OR -pg 1 -lvl 15 -y 1150 -defaultsOSRD
+preplace inst trng_control_0 -pg 1 -lvl 3 -y 450 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 600 -defaultsOSRD
+preplace inst PI_controller_0 -pg 1 -lvl 9 -y 640 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 7 -y 460 -defaultsOSRD
+preplace inst ARM_CLK_CTRL -pg 1 -lvl 13 -y 1260 -defaultsOSRD
+preplace inst PI_CLK_CTRL -pg 1 -lvl 13 -y 1140 -defaultsOSRD
+preplace inst rst_or_uart_complete -pg 1 -lvl 6 -y 590 -defaultsOSRD
+preplace inst rst_inv -pg 1 -lvl 5 -y 580 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 6 -y 290 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -y 150 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 5 12 N 70 NJ 60 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ
+preplace netloc MUX_CLKDELAY_SELECT_OR_Res 1 15 1 4760
+preplace netloc coarse_delay_ctrl_gpio2_io_o 1 7 6 NJ 1070 NJ 1070 NJ 1070 NJ 1070 NJ 1070 4080
+preplace netloc xlconstant_1_dout 1 10 1 N
+preplace netloc delay_top_0_registered_negedge_data 1 16 1 N
+preplace netloc trng_control_0_lfsr_load_data 1 3 1 1490
+preplace netloc PI_controller_0_data_coarse_delay_ctrl 1 9 2 3470 860 NJ
+preplace netloc DIP_CLOCKS_TO_LOAD_1 1 0 2 NJ 250 N
+preplace netloc PI_orARM_Core_1 1 0 14 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 3650 1310 NJ 1230 NJ 1320 4310
+preplace netloc xlconstant_2_dout 1 10 1 N
+preplace netloc uart_tranf_complete_inv_Res 1 3 1 1440
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 6 1 2630
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 6 1 2590
+preplace netloc fine_delay_ctrl_gpio_io_o 1 7 9 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 850 NJ 850 4770
+preplace netloc Op2_1 1 0 8 NJ 690 NJ 690 NJ 740 NJ 700 NJ 690 NJ 690 NJ 750 2920
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 7 1 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 5 1 2230
+preplace netloc ARM_CLK_CTRL_Res 1 13 2 4320 1160 NJ
+preplace netloc PI_CLK_CTRL_Res 1 13 2 NJ 1140 N
+preplace netloc Pi_clk_delay_dout 1 11 2 NJ 900 N
+preplace netloc mux_s0_Res 1 5 1 N
+preplace netloc Op2_2 1 0 5 N 820 NJ 820 NJ 820 1490 730 1730
+preplace netloc xlconcat_1_dout 1 12 1 4090
+preplace netloc util_vector_logic_0_Res 1 6 1 2600
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 5 410 330 NJ 330 NJ 330 NJ 330 2180
+preplace netloc coarse_delay_ctrl_gpio_io_o 1 7 6 NJ 1080 NJ 1080 NJ 1080 NJ 1190 NJ 1190 4080
+preplace netloc bram_control_0_bram_full 1 7 1 2920
+preplace netloc trng_control_0_lfsr_load_en 1 3 1 1470
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 6 1 2580
+preplace netloc ZERo_dout 1 1 1 420
+preplace netloc MUX_DATADELAY_SELECT_OR_Res 1 15 1 N
+preplace netloc mux_s1_Res 1 5 1 2210
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 2 7 1090 550 1480 670 1720 530 2230 500 2620 810 NJ 810 3170
+preplace netloc lfsr_filter_0_s_out 1 4 1 1770
+preplace netloc fine_delay_ctrl_gpio2_io_o 1 7 9 NJ 920 NJ 920 NJ 840 NJ 840 NJ 840 NJ 840 NJ 860 NJ 860 4760
+preplace netloc xlconstant_0_dout 1 1 1 420
+preplace netloc xlconcat_0_dout 1 2 1 1080
+preplace netloc processing_system7_0_FIXED_IO 1 5 12 2180 80 NJ 70 NJ 90 NJ 90 NJ 90 NJ 90 NJ 90 NJ 90 NJ 90 NJ 90 NJ 90 NJ
+preplace netloc lfsr_or_raw_mux_Res 1 6 1 2630
+preplace netloc clk_wiz_0_clk_out1 1 2 14 1050 750 NJ 710 NJ 710 NJ 710 NJ 800 NJ 800 NJ 800 NJ 800 NJ 800 NJ 800 NJ 800 NJ 840 NJ 840 NJ
+preplace netloc axi_gpio_1_ip2intc_irpt 1 4 4 1770 300 NJ 90 NJ 80 2910
+preplace netloc axi_gpio_0_gpio_io_o1 1 7 10 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 N
+preplace netloc bram_control_0_bram 1 7 1 2910
+preplace netloc clk_wiz_0_clk_out2 1 2 14 1070 530 1460 480 NJ 480 NJ 520 2580 760 NJ 760 3160 720 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ
+preplace netloc ARM_DATA_CTRL_Res 1 13 2 NJ 1030 4520
+preplace netloc util_vector_logic_1_Res 1 4 1 N
+preplace netloc rst_inv_Res 1 5 1 N
+preplace netloc axi_gpio_1_gpio2_io_o 1 2 15 1100 730 NJ 690 NJ 680 2240 530 NJ 530 2920 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 2 4 NJ 370 NJ 370 NJ 370 2210
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 6 420 320 NJ 320 NJ 320 1720 310 2220 490 2610
+preplace netloc c_shift_ram_0_Q 1 2 15 1100 560 NJ 660 1760 700 NJ 700 NJ 770 NJ 770 3180 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 5230
+preplace netloc xlconcat_2_dout 1 12 3 4100 1200 NJ 1150 4520
+preplace netloc PI_data_delay_dout 1 11 2 NJ 1130 N
+preplace netloc util_vector_logic_0_Res1 1 7 2 2930 630 3150
+preplace netloc processing_system7_0_FCLK_CLK1 1 1 5 420 530 NJ 590 NJ 680 NJ 630 2190
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 6 1 2600
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 6 1 2560
+preplace netloc PI_controller_0_clk_coarse_delay_ctrl 1 9 2 3490 850 NJ
+preplace netloc ARM_CORE_SELECT_Res 1 11 1 3860
+preplace netloc PI_DATA_CTRL_Res 1 13 2 NJ 910 N
+preplace netloc delay_top_0_registered_data 1 15 2 4770 790 5230
+levelinfo -pg 1 230 330 870 1270 1620 1980 2390 2770 3040 3330 3570 3760 3970 4200 4420 4640 5000 5250
+",
+}
+{
+   da_axi4_cnt: "9",
+   da_board_cnt: "1",
+   da_ps7_cnt: "1",
+}

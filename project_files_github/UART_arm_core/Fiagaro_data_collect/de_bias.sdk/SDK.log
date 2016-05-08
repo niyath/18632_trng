@@ -1,0 +1,42 @@
+19:36:08 INFO  : Processing command line option -hwspec /home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/de_bias.sdk/design_1_wrapper.hdf.
+19:36:25 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+19:50:36 INFO  : System reset is completed.
+19:50:39 INFO  : FPGA configured successfully with bitstream "/home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/de_bias.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+19:50:39 INFO  : ps7_init is completed.
+19:50:40 INFO  : ps7_post_config is completed.
+19:58:26 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:58:35 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unable to Stop Processor. System could be in unknown state.
+                     Please reset the system
+Unknown Error Occured
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(TM.java:753)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(CPURunSession.java:27)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminateCurrentLaunch(TM.java:801)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:564)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:293)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+19:59:34 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:00:35 INFO  : Processing command line option -hwspec /home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/de_bias.sdk/design_1_wrapper.hdf.
+20:00:36 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+20:00:36 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+20:00:36 ERROR :  [Hsi 55-1593] Current Hardware Design is not set.
+20:01:18 INFO  : System reset is completed.
+20:01:20 INFO  : FPGA configured successfully with bitstream "/home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/de_bias.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:01:21 INFO  : ps7_init is completed.
+20:01:21 INFO  : ps7_post_config is completed.
+21:02:21 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:25:34 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+21:25:39 INFO  : Processing command line option -hwspec /home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/de_bias.sdk/design_1_wrapper.hdf.
+21:25:41 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+21:26:38 INFO  : System reset is completed.
+21:26:41 INFO  : FPGA configured successfully with bitstream "/home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/de_bias.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:26:41 INFO  : ps7_init is completed.
+21:26:41 INFO  : ps7_post_config is completed.
+23:33:52 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

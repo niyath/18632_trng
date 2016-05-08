@@ -1,0 +1,223 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Mon Apr 25 13:19:55 2016
+| Host         : srihari running 64-bit Ubuntu 14.04.4 LTS
+| Command      : report_clock_utilization -file metastable_ro_wrapper_clock_utilization_placed.rpt
+| Design       : metastable_ro_wrapper
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Details of Global Clocks
+3. Details of Regional Clocks
+4. Details of Multi-Regional Clocks
+5. Details of I/O Clocks
+6. Details of Local Clocks
+7. Clock Regions : Key Resource Utilization
+8. Net wise resources used in clock region X1Y0
+9. Net wise resources used in clock region X0Y1
+10. Net wise resources used in clock region X1Y1
+11. Net wise resources used in clock region X0Y2
+12. Net wise resources used in clock region X1Y2
+
+1. Clock Primitive Utilization
+------------------------------
+
++-------+------+-----------+-----------+
+| Type  | Used | Available | Num Fixed |
++-------+------+-----------+-----------+
+| BUFG  |    6 |        32 |         0 |
+| BUFH  |    0 |        72 |         0 |
+| BUFIO |    0 |        16 |         0 |
+| MMCM  |    1 |         4 |         0 |
+| PLL   |    0 |         4 |         0 |
+| BUFR  |    0 |        16 |         0 |
+| BUFMR |    0 |         8 |         0 |
++-------+------+-----------+-----------+
+
+
+2. Details of Global Clocks
+---------------------------
+
++-------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------+--------------+-------+---------------+-----------+
+|       |                                                                             |                                                                       |   Num Loads  |       |               |           |
++-------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+| Index | BUFG Cell                                                                   | Net Name                                                              | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
++-------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+|     1 | dbg_hub/inst/u_bufg_icon_update                                             | dbg_hub/inst/UPDATE                                                   |    1 |     1 |    no |         1.927 |     0.119 |
+|     2 | metastable_ro_i/clk_wiz_0/inst/clkf_buf                                     | metastable_ro_i/clk_wiz_0/inst/clkfbout_buf_metastable_ro_clk_wiz_0_0 |    1 |     1 |    no |         1.878 |     0.094 |
+|     3 | metastable_ro_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG | metastable_ro_i/processing_system7_0/inst/FCLK_CLK1                   |    1 |     1 |    no |         1.876 |     0.094 |
+|     4 | metastable_ro_i/clk_wiz_0/inst/clkout1_buf                                  | metastable_ro_i/clk_wiz_0/inst/clk_out1                               |    3 |     3 |    no |         2.186 |     0.453 |
+|     5 | dbg_hub/inst/u_bufg_icon                                                    | dbg_hub/inst/idrck                                                    |  457 |   114 |    no |         1.959 |     0.242 |
+|     6 | metastable_ro_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG | metastable_ro_i/processing_system7_0/inst/FCLK_CLK0                   | 7155 |  2137 |    no |         2.134 |     0.549 |
++-------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+
+
++-------+----------------------------------------------+-------------------------------------------------------------------+--------------+-------+---------------+-----------+
+|       |                                              |                                                                   |   Num Loads  |       |               |           |
++-------+----------------------------------------------+-------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+| Index | MMCM Cell                                    | Net Name                                                          | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
++-------+----------------------------------------------+-------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+|     1 | metastable_ro_i/clk_wiz_0/inst/mmcm_adv_inst | metastable_ro_i/clk_wiz_0/inst/clk_out1_metastable_ro_clk_wiz_0_0 |    1 |     1 |    no |         1.889 |     0.094 |
+|     2 | metastable_ro_i/clk_wiz_0/inst/mmcm_adv_inst | metastable_ro_i/clk_wiz_0/inst/clkfbout_metastable_ro_clk_wiz_0_0 |    1 |     1 |    no |         1.889 |     0.094 |
++-------+----------------------------------------------+-------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+
+
+3. Details of Regional Clocks
+-----------------------------
+
+4. Details of Multi-Regional Clocks
+-----------------------------------
+
+5. Details of I/O Clocks
+------------------------
+
+6. Details of Local Clocks
+--------------------------
+
++-------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+--------------+-------+---------------+-----------+
+|       |                                                                                               |                                                                                              |   Num Loads  |       |               |           |
++-------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+| Index | Local Clk Src                                                                                 | Net Name                                                                                     | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
++-------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+|     1 | metastable_ro_i/delay_top_0/inst/fine_delay_inst/genblk2[0].lut_fine_delay_inst_clk/LUT6_inst | metastable_ro_i/delay_top_0/inst/fine_delay_inst/genblk2[0].lut_fine_delay_inst_clk/inv_data |    1 |     1 |    no |         0.645 |     0.049 |
++-------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+
+
+7. Clock Regions : Key Resource Utilization
+-------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E1   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20000 |    0 |  4000 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    1 | 25600 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y1              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2357 |  9600 |  526 |  1600 |    0 |    20 |    4 |    10 |    0 |    20 |
+| X1Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3491 | 20800 |  814 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y2              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  291 |  9600 |   14 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  115 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* RAMB36 site can be used as two RAMB18/FIFO18 sites
+
+
+8. Net wise resources used in clock region X1Y0
+-----------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                             Clock Net Name                            |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------------------+
+| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | metastable_ro_i/clk_wiz_0/inst/clkfbout_buf_metastable_ro_clk_wiz_0_0 |
+| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | metastable_ro_i/processing_system7_0/inst/FCLK_CLK1                   |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   1 |     0 |        0 | metastable_ro_i/processing_system7_0/inst/FCLK_CLK0                   |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------------------+
+
+
+9. Net wise resources used in clock region X0Y1
+-----------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                    Clock Net Name                   |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         8 |       0 |       0 | 2356 |   526 |        0 | metastable_ro_i/processing_system7_0/inst/FCLK_CLK0 |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
+
+
+10. Net wise resources used in clock region X1Y1
+------------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                    Clock Net Name                   |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    1 |     0 |        0 | dbg_hub/inst/UPDATE                                 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  433 |    24 |        0 | dbg_hub/inst/idrck                                  |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 3057 |   790 |        0 | metastable_ro_i/processing_system7_0/inst/FCLK_CLK0 |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
+
+
+11. Net wise resources used in clock region X0Y2
+------------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                    Clock Net Name                   |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------+
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 291 |    14 |        0 | metastable_ro_i/processing_system7_0/inst/FCLK_CLK0 |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------+
+
+
+12. Net wise resources used in clock region X1Y2
+------------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                    Clock Net Name                   |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------+
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 115 |     0 |        0 | metastable_ro_i/processing_system7_0/inst/FCLK_CLK0 |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------+
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y2 [get_cells dbg_hub/inst/u_bufg_icon_update]
+set_property LOC BUFGCTRL_X0Y0 [get_cells dbg_hub/inst/u_bufg_icon]
+set_property LOC BUFGCTRL_X0Y1 [get_cells metastable_ro_i/clk_wiz_0/inst/clkout1_buf]
+set_property LOC BUFGCTRL_X0Y3 [get_cells metastable_ro_i/clk_wiz_0/inst/clkf_buf]
+set_property LOC BUFGCTRL_X0Y16 [get_cells metastable_ro_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG]
+set_property LOC BUFGCTRL_X0Y17 [get_cells metastable_ro_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG]
+
+# Location of IO Clock Primitives
+
+# Location of MMCM Clock Primitives
+set_property LOC MMCME2_ADV_X1Y0 [get_cells metastable_ro_i/clk_wiz_0/inst/mmcm_adv_inst]
+
+# Location of BUFH Clock Primitives
+
+# Location of BUFR Clock Primitives
+
+# Location of BUFMR Clock Primitives
+
+# Location of PLL Clock Primitives
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+
+# Clock net "dbg_hub/inst/UPDATE" driven by instance "dbg_hub/inst/u_bufg_icon_update" located at site "BUFGCTRL_X0Y2"
+#startgroup
+create_pblock CLKAG_dbg_hub/inst/UPDATE
+add_cells_to_pblock [get_pblocks  CLKAG_dbg_hub/inst/UPDATE] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dbg_hub/inst/UPDATE"}]]]
+resize_pblock [get_pblocks CLKAG_dbg_hub/inst/UPDATE] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "dbg_hub/inst/idrck" driven by instance "dbg_hub/inst/u_bufg_icon" located at site "BUFGCTRL_X0Y0"
+#startgroup
+create_pblock CLKAG_dbg_hub/inst/idrck
+add_cells_to_pblock [get_pblocks  CLKAG_dbg_hub/inst/idrck] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dbg_hub/inst/idrck"}]]]
+resize_pblock [get_pblocks CLKAG_dbg_hub/inst/idrck] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "metastable_ro_i/clk_wiz_0/inst/clk_out1" driven by instance "metastable_ro_i/clk_wiz_0/inst/clkout1_buf" located at site "BUFGCTRL_X0Y1"
+#startgroup
+create_pblock CLKAG_metastable_ro_i/clk_wiz_0/inst/clk_out1
+add_cells_to_pblock [get_pblocks  CLKAG_metastable_ro_i/clk_wiz_0/inst/clk_out1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="metastable_ro_i/clk_wiz_0/inst/clk_out1"}]]]
+resize_pblock [get_pblocks CLKAG_metastable_ro_i/clk_wiz_0/inst/clk_out1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "metastable_ro_i/delay_top_0/inst/fine_delay_inst/genblk2[0].lut_fine_delay_inst_clk/inv_data" driven by instance "metastable_ro_i/delay_top_0/inst/fine_delay_inst/genblk2[0].lut_fine_delay_inst_clk/LUT6_inst" located at site "SLICE_X30Y71"
+#startgroup
+create_pblock CLKAG_metastable_ro_i/delay_top_0/inst/fine_delay_inst/genblk2[0].lut_fine_delay_inst_clk/inv_data
+add_cells_to_pblock [get_pblocks  CLKAG_metastable_ro_i/delay_top_0/inst/fine_delay_inst/genblk2[0].lut_fine_delay_inst_clk/inv_data] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="metastable_ro_i/delay_top_0/inst/fine_delay_inst/genblk2[0].lut_fine_delay_inst_clk/inv_data"}]]]
+resize_pblock [get_pblocks CLKAG_metastable_ro_i/delay_top_0/inst/fine_delay_inst/genblk2[0].lut_fine_delay_inst_clk/inv_data] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "metastable_ro_i/processing_system7_0/inst/FCLK_CLK0" driven by instance "metastable_ro_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG" located at site "BUFGCTRL_X0Y16"
+#startgroup
+create_pblock CLKAG_metastable_ro_i/processing_system7_0/inst/FCLK_CLK0
+add_cells_to_pblock [get_pblocks  CLKAG_metastable_ro_i/processing_system7_0/inst/FCLK_CLK0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="metastable_ro_i/processing_system7_0/inst/FCLK_CLK0"}]]]
+resize_pblock [get_pblocks CLKAG_metastable_ro_i/processing_system7_0/inst/FCLK_CLK0] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup

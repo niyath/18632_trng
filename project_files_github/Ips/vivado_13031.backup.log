@@ -1,0 +1,869 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Apr 13 16:29:10 2016
+# Process ID: 7904
+# Log file: /home/srihari/Hardware_securiy/Ips/vivado.log
+# Journal file: /home/srihari/Hardware_securiy/Ips/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/Fiagaro_data_collect.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/srihari/Hardware_securiy/Ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+WARNING: [BD 41-1303] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+open_bd_design {/home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/Fiagaro_data_collect.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- user.org:user:figaro_top:1.0 - figaro_top_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.2 - blk_mem_gen_0
+Successfully read diagram <design_1> from BD file </home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/Fiagaro_data_collect.srcs/sources_1/bd/design_1/design_1.bd>
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/blk_mem_gen_0" }  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_bram_if_cntlr:4.0 lmb_bram_if_cntlr_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.DATA_WIDTH {32} CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_0]
+endgroup
+open_bd_design {/home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/Fiagaro_data_collect.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Use_RSTB_Pin {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_bd_cells blk_mem_gen_0]
+endgroup
+startgroup
+endgroup
+startgroup
+endgroup
+delete_bd_objs [get_bd_cells lmb_bram_if_cntlr_0]
+open_project /home/srihari/Hardware_securiy/fibonacci/fibonacci.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/srihari/Hardware_securiy/Ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/srihari/Hardware_securiy/Ips/vivado_pid7904.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/srihari/Hardware_securiy/Ips/vivado_pid7904.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/srihari/Hardware_securiy/Ips/vivado_pid7904.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/srihari/Hardware_securiy/Ips/vivado_pid7904.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/srihari/Hardware_securiy/Ips/vivado_pid7904.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/srihari/Hardware_securiy/Ips/vivado_pid7904.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/srihari/Hardware_securiy/Ips/vivado_pid7904.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/srihari/Hardware_securiy/Ips/vivado_pid7904.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/srihari/Hardware_securiy/Ips/vivado_pid7904.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException (See /home/srihari/Hardware_securiy/Ips/vivado_pid7904.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException (See /home/srihari/Hardware_securiy/Ips/vivado_pid7904.debug)
+ipx::package_project -root_dir /home/srihari
+WARNING: [IP_Flow 19-1834] The constraints file "figaro.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Downloads/garo_inv_xor.v'.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Downloads/galois_ro.v'.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Hardware_securiy/fibonacci/fibonacci.srcs/sources_1/new/figaro_top.v'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-818] Not transferring dependency attribute "{2451213151618}" into user parameter "XOR_POS".
+set_property vendor Xilinx [ipx::current_core]
+set_property taxonomy /UserIP [ipx::current_core]
+set_property value_format string [ipx::get_user_parameters XOR_POS -of_objects [ipx::current_core]]
+set_property value_bit_string_length 0 [ipx::get_user_parameters XOR_POS -of_objects [ipx::current_core]]
+set_property value_format string [ipx::get_hdl_parameters XOR_POS -of_objects [ipx::current_core]]
+set_property value_bit_string_length 0 [ipx::get_hdl_parameters XOR_POS -of_objects [ipx::current_core]]
+set_property value_format long [ipx::get_user_parameters XOR_POS -of_objects [ipx::current_core]]
+set_property value_format long [ipx::get_hdl_parameters XOR_POS -of_objects [ipx::current_core]]
+ipx::unload_core /home/srihari/component.xml
+current_project Fiagaro_data_collect
+current_project fibonacci
+ipx::package_project -root_dir /home/srihari/Hardware_securiy/Ips/fibonacci_ro -import_files -set_current false -force
+WARNING: [IP_Flow 19-1834] The constraints file "figaro.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Downloads/garo_inv_xor.v'.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Downloads/galois_ro.v'.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Hardware_securiy/fibonacci/fibonacci.srcs/sources_1/new/figaro_top.v'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-818] Not transferring dependency attribute "{2451213151618}" into user parameter "XOR_POS".
+ipx::unload_core /home/srihari/Hardware_securiy/Ips/fibonacci_ro/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory /home/srihari/Hardware_securiy/Ips/fibonacci_ro /home/srihari/Hardware_securiy/Ips/fibonacci_ro/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/srihari/Hardware_securiy/Ips'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/srihari/Hardware_securiy/Ips' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is '/home/srihari/Hardware_securiy/Ips/fibonacci_ro'.)
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 5928.922 ; gain = 35.027 ; free physical = 3478 ; free virtual = 13427
+update_compile_order -fileset sources_1
+current_project fibonacci
+current_project tmp_edit_project
+set_property top fibonacci_ro [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_project fibonacci
+ipx::package_project -root_dir /home/srihari/Hardware_securiy/Ips/fibonacci_ro -import_files -set_current false -force
+WARNING: [IP_Flow 19-1834] The constraints file "figaro.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Downloads/garo_inv_xor.v'.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Downloads/galois_ro.v'.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Hardware_securiy/fibonacci/fibonacci.srcs/sources_1/new/figaro_top.v'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-818] Not transferring dependency attribute "{2451213151618}" into user parameter "XOR_POS".
+ipx::unload_core /home/srihari/Hardware_securiy/Ips/fibonacci_ro/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory /home/srihari/Hardware_securiy/Ips/fibonacci_ro /home/srihari/Hardware_securiy/Ips/fibonacci_ro/component.xml
+ERROR: [Ipptcl 7-561] A project named 'tmp_edit_project' is already opened.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+WARNING: [Ipptcl 7-571] The IP root directory is '/'.
+current_project tmp_edit_project
+WARNING: [Ipptcl 7-571] The IP root directory is '/'.
+ipx::package_project -root_dir /home/srihari/Hardware_securiy/Ips/fibonacci_ro -import_files -set_current false -force
+WARNING: [IP_Flow 19-1834] The constraints file "figaro.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Hardware_securiy/Ips/fibonacci_ro/src/clk_wiz_0/clk_wiz_0.xci'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-818] Not transferring dependency attribute "{2451213151618}" into user parameter "XOR_POS".
+ipx::unload_core /home/srihari/Hardware_securiy/Ips/fibonacci_ro/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory /home/srihari/Hardware_securiy/Ips/fibonacci_ro /home/srihari/Hardware_securiy/Ips/fibonacci_ro/component.xml
+ERROR: [Ipptcl 7-561] A project named 'tmp_edit_project' is already opened.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+close_project
+ipx::package_project -root_dir /home/srihari -force
+WARNING: [IP_Flow 19-1834] The constraints file "figaro.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Downloads/garo_inv_xor.v'.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Downloads/galois_ro.v'.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Hardware_securiy/fibonacci/fibonacci.srcs/sources_1/new/figaro_top.v'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-818] Not transferring dependency attribute "{2451213151618}" into user parameter "XOR_POS".
+set_property vendor Xilinx [ipx::current_core]
+set_property taxonomy /UserIP [ipx::current_core]
+ipx::package_project -root_dir /home/srihari/Hardware_securiy/Ips/fibonacci_ro -import_files -set_current false -force
+WARNING: [IP_Flow 19-1834] The constraints file "figaro.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Downloads/garo_inv_xor.v'.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Downloads/galois_ro.v'.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Hardware_securiy/fibonacci/fibonacci.srcs/sources_1/new/figaro_top.v'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'LENGTH' by 20 for port or parameter 'fib_osc'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'XOR_LENGTH' by 8 for port or parameter 'temp_xor'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'LENGTH' by 20 for port or parameter 'fib_polynomial'
+ipx::unload_core /home/srihari/Hardware_securiy/Ips/fibonacci_ro/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory /home/srihari/Hardware_securiy/Ips/fibonacci_ro /home/srihari/Hardware_securiy/Ips/fibonacci_ro/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/srihari/Hardware_securiy/Ips'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/srihari/Hardware_securiy/Ips' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is '/home/srihari/Hardware_securiy/Ips/fibonacci_ro'.)
+current_project fibonacci
+current_project tmp_edit_project
+update_compile_order -fileset sources_1
+set_property top fibonacci_ro [get_filesets sim_1]
+update_compile_order -fileset sim_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Hardware_securiy/Ips/fibonacci_ro/src/clk_wiz_0/clk_wiz_0.xci'.
+ipx::create_xgui_files [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core /home/srihari/Hardware_securiy/Ips/fibonacci_ro/user.org_user_fibonacci_ro_1.0.zip [ipx::current_core]
+ipx::update_ip_instances
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/srihari/Hardware_securiy/Ips'.
+current_project Fiagaro_data_collect
+delete_bd_objs [get_bd_nets enable_1] [get_bd_nets figaro_top_0_sampled_output] [get_bd_cells figaro_top_0]
+current_project fibonacci
+set_property top galois_ro [current_fileset]
+ipx::package_project -root_dir /home/srihari/Hardware_securiy/Ips/galois_ro -import_files -set_current false
+WARNING: [IP_Flow 19-1834] The constraints file "figaro.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Downloads/fibonacci_ro.v'.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Hardware_securiy/fibonacci/fibonacci.srcs/sources_1/new/figaro_top.v'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::unload_core /home/srihari/Hardware_securiy/Ips/galois_ro/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory /home/srihari/Hardware_securiy/Ips/galois_ro /home/srihari/Hardware_securiy/Ips/galois_ro/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/srihari/Hardware_securiy/Ips'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/srihari/Hardware_securiy/Ips' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is '/home/srihari/Hardware_securiy/Ips/galois_ro'.)
+update_compile_order -fileset sources_1
+set_property top galois_ro [get_filesets sim_1]
+update_compile_order -fileset sim_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: '/home/srihari/Hardware_securiy/Ips/galois_ro/src/clk_wiz_0/clk_wiz_0.xci'.
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core /home/srihari/Hardware_securiy/Ips/galois_ro/user.org_user_galois_ro_1.0.zip [ipx::current_core]
+ipx::update_ip_instances
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/srihari/Hardware_securiy/Ips'.
+startgroup
+current_project Fiagaro_data_collect
+create_bd_cell -type ip -vlnv user.org:user:fibonacci_ro:1.0 fibonacci_ro_0
+endgroup
+update_ip_catalog -rebuild -repo_path /home/srihari/Hardware_securiy/Ips
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/srihari/Hardware_securiy/Ips'
+delete_bd_objs [get_bd_cells fibonacci_ro_0]
+update_ip_catalog -rebuild -repo_path /home/srihari/Hardware_securiy/Ips
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/srihari/Hardware_securiy/Ips'
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:fibonacci_ro:1.0 fibonacci_ro_0
+endgroup
+delete_bd_objs [get_bd_cells fibonacci_ro_0]
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:fibonacci_ro:1.0 fibonacci_ro_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:galois_ro:1.0 galois_ro_0
+endgroup
+set_property location {3 898 570} [get_bd_cells galois_ro_0]
+set_property location {1.5 704 582} [get_bd_cells galois_ro_0]
+set_property location {2 744 686} [get_bd_cells fibonacci_ro_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_SIZE {1} CONFIG.C_OPERATION {xor}] [get_bd_cells util_vector_logic_0]
+endgroup
+connect_bd_net [get_bd_pins galois_ro_0/ro_out] [get_bd_pins util_vector_logic_0/Op1]
+connect_bd_net [get_bd_pins fibonacci_ro_0/fibonacci_ro_out] [get_bd_pins util_vector_logic_0/Op2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_shift_ram:12.0 c_shift_ram_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.Width.VALUE_SRC USER] [get_bd_cells c_shift_ram_0]
+set_property -dict [list CONFIG.Width {1} CONFIG.Depth {1} CONFIG.DefaultData {0} CONFIG.AsyncInitVal {0} CONFIG.SyncInitVal {0}] [get_bd_cells c_shift_ram_0]
+endgroup
+connect_bd_net [get_bd_pins c_shift_ram_0/D] [get_bd_pins util_vector_logic_0/Res]
+connect_bd_net -net [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_pins c_shift_ram_0/CLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+regenerate_bd_layout
+set_property location {2 617 417} [get_bd_cells galois_ro_0]
+connect_bd_net [get_bd_ports enable] [get_bd_pins galois_ro_0/ro_enable]
+connect_bd_net -net [get_bd_nets enable_1] [get_bd_ports enable] [get_bd_pins fibonacci_ro_0/enable]
+regenerate_bd_layout
+set_property location {3.5 1118 422} [get_bd_cells c_shift_ram_0]
+current_project fibonacci
+close_project
+create_project LFSR_filter /home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter -part xc7z020clg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+set_property board_part em.avnet.com:zed:part0:1.2 [current_project]
+add_files -norecurse {/home/srihari/Hardware_securiy/LFSR_filter/load_en_dff.v /home/srihari/Hardware_securiy/LFSR_filter/lfsr_filter.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+file mkdir /home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv w ]
+add_files -fileset sim_1 /home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv
+update_compile_order -fileset sim_1
+current_project Fiagaro_data_collect
+current_project LFSR_filter
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav'
+xvlog -m64 -prj tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/load_en_dff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_en_dff
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/lfsr_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lfsr_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+ERROR: [VRFC 10-91] pload is not declared [/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv:57]
+ERROR: [VRFC 10-1040] module tb ignored due to previous errors [/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv:23]
+INFO: [USF-XSim-99] Step results log file:'/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav'
+xvlog -m64 -prj tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/load_en_dff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_en_dff
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/lfsr_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lfsr_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 01c9a287c1164bf1bc0128a749794491 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_en_dff
+Compiling module xil_defaultlib.lfsr_filter_default
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Apr 13 17:43:09 2016. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 13 17:43:09 2016...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 5974.000 ; gain = 0.000 ; free physical = 2950 ; free virtual = 13023
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv" Line 65
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 5994.496 ; gain = 20.496 ; free physical = 2936 ; free virtual = 13017
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 6017.664 ; gain = 0.000 ; free physical = 2911 ; free virtual = 12997
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav'
+xvlog -m64 -prj tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/load_en_dff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_en_dff
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/lfsr_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lfsr_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 01c9a287c1164bf1bc0128a749794491 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_en_dff
+Compiling module xil_defaultlib.lfsr_filter_default
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Apr 13 17:44:07 2016. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 13 17:44:07 2016...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 1 us : File "/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv" Line 65
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 6017.664 ; gain = 0.000 ; free physical = 2910 ; free virtual = 12995
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav'
+xvlog -m64 -prj tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/load_en_dff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_en_dff
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/lfsr_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lfsr_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 01c9a287c1164bf1bc0128a749794491 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_en_dff
+Compiling module xil_defaultlib.lfsr_filter_default
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Apr 13 17:45:19 2016. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 13 17:45:19 2016...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 6017.664 ; gain = 0.000 ; free physical = 2909 ; free virtual = 12993
+run all
+$finish called at time : 10 us : File "/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv" Line 65
+run all
+run: Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:06 . Memory (MB): peak = 6017.664 ; gain = 0.000 ; free physical = 2887 ; free virtual = 12985
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav'
+xvlog -m64 -prj tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/load_en_dff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_en_dff
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/lfsr_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lfsr_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 01c9a287c1164bf1bc0128a749794491 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_en_dff
+Compiling module xil_defaultlib.lfsr_filter_default
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Apr 13 17:47:51 2016. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 13 17:47:51 2016...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 6017.664 ; gain = 0.000 ; free physical = 2892 ; free virtual = 12981
+run all
+$finish called at time : 100 us : File "/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter/LFSR_filter.srcs/sim_1/new/tb.sv" Line 65
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_project Fiagaro_data_collect
+current_project LFSR_filter
+ipx::package_project -root_dir /home/srihari/Hardware_securiy/LFSR_filter
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-2228] Inferred bus interface "signal_clock" of definition type "xilinx.com:signal:clock:1.0".
+set_property vendor Xilinx [ipx::current_core]
+set_property taxonomy /UserIP [ipx::current_core]
+ipx::add_user_parameter asd [ipx::current_core]
+set_property value_resolve_type user [ipx::get_user_parameters asd -of_objects [ipx::current_core]]
+ipx::remove_user_parameter asd [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property ip_repo_paths  /home/srihari/Hardware_securiy/LFSR_filter [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/srihari/Hardware_securiy/LFSR_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/srihari/Hardware_securiy/LFSR_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is '/home/srihari/Hardware_securiy/LFSR_filter/LFSR_filter'.)
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core /home/srihari/Hardware_securiy/LFSR_filter/Xilinx_user_lfsr_filter_1.0.zip [ipx::current_core]
+current_project Fiagaro_data_collect
+update_ip_catalog -rebuild -repo_path /home/srihari/Hardware_securiy/Ips
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/srihari/Hardware_securiy/Ips'
+update_ip_catalog -rebuild -repo_path /home/srihari/Hardware_securiy/Ips
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/srihari/Hardware_securiy/Ips'
+update_ip_catalog -rebuild -repo_path /home/srihari/Hardware_securiy/Ips
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/srihari/Hardware_securiy/Ips'
+ipx::unload_core /home/srihari/Hardware_securiy/LFSR_filter/component.xml
+current_project LFSR_filter
+ipx::package_project -root_dir /home/srihari/Hardware_securiy/Ips/LFSR_filter -import_files -set_current false
+CRITICAL WARNING: [IP_Flow 19-4315] The current project is already packaged. You can override existing '/home/srihari/Hardware_securiy/LFSR_filter/component.xml' with the ipx::package_project -force option.
+ipx::package_project -root_dir /home/srihari/Hardware_securiy/Ips/LFSR_filter -import_files -set_current false
+CRITICAL WARNING: [IP_Flow 19-4315] The current project is already packaged. You can override existing '/home/srihari/Hardware_securiy/LFSR_filter/component.xml' with the ipx::package_project -force option.
+ipx::package_project -force option.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-2228] Inferred bus interface "signal_clock" of definition type "xilinx.com:signal:clock:1.0".
+component component_12
+ipx::unload_core /home/srihari/Hardware_securiy/LFSR_filter/component.xml
+ipx::package_project -root_dir /home/srihari/Hardware_securiy/Ips/LFSR_filter -import_files -set_current false
+CRITICAL WARNING: [IP_Flow 19-4315] The current project is already packaged. You can override existing '/home/srihari/Hardware_securiy/LFSR_filter/component.xml' with the ipx::package_project -force option.
+close_project
+create_project LFSR /home/srihari/Hardware_securiy/LFSR/LFSR -part xc7z020clg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+set_property board_part em.avnet.com:zed:part0:1.2 [current_project]
+add_files -norecurse {/home/srihari/Hardware_securiy/LFSR/load_en_dff.v /home/srihari/Hardware_securiy/LFSR/lfsr_filter.v /home/srihari/Hardware_securiy/LFSR/tb.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+ipx::package_project -root_dir /home/srihari/Hardware_securiy/Ips/LFSR_filter -import_files -set_current false
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-965] There are no component ports to infer bus interfaces.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'tb.sv'.
+ipx::unload_core /home/srihari/Hardware_securiy/Ips/LFSR_filter/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory /home/srihari/Hardware_securiy/Ips/LFSR_filter /home/srihari/Hardware_securiy/Ips/LFSR_filter/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+update_compile_order -fileset sim_1
+set_property top lfsr_filter [current_fileset]
+update_compile_order -fileset sources_1
+ipx::unload_core /home/srihari/Hardware_securiy/Ips/LFSR_filter/component.xml
+close_project
+set_property top lfsr_filter [current_fileset]
+update_compile_order -fileset sources_1
+add_files -fileset sim_1 -norecurse /home/srihari/Hardware_securiy/LFSR/tb.sv
+remove_files /home/srihari/Hardware_securiy/LFSR/tb.sv
+ipx::package_project -root_dir /home/srihari/Hardware_securiy/Ips/LFSR_filter -import_files -set_current false -force
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-2228] Inferred bus interface "signal_clock" of definition type "xilinx.com:signal:clock:1.0".
+ipx::unload_core /home/srihari/Hardware_securiy/Ips/LFSR_filter/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory /home/srihari/Hardware_securiy/Ips/LFSR_filter /home/srihari/Hardware_securiy/Ips/LFSR_filter/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core /home/srihari/Hardware_securiy/Ips/LFSR_filter/user.org_user_lfsr_filter_1.0.zip [ipx::current_core]
+ipx::update_ip_instances
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/srihari/Hardware_securiy/Ips/LFSR_filter'.
+current_project Fiagaro_data_collect
+update_ip_catalog -rebuild -repo_path /home/srihari/Hardware_securiy/Ips
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/srihari/Hardware_securiy/Ips'
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:lfsr_filter:1.0 lfsr_filter_0
+endgroup
+connect_bd_net -net [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_pins lfsr_filter_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net -net [get_bd_nets rst_processing_system7_0_100M_peripheral_aresetn] [get_bd_pins lfsr_filter_0/rstn] [get_bd_pins rst_processing_system7_0_100M/peripheral_aresetn]
+connect_bd_net -net [get_bd_nets enable_1] [get_bd_ports enable] [get_bd_pins lfsr_filter_0/en]
+disconnect_bd_net /enable_1 [get_bd_pins lfsr_filter_0/en]
+set_property location {3 939 332} [get_bd_cells c_shift_ram_0]
+delete_bd_objs [get_bd_nets util_vector_logic_0_Res] [get_bd_cells c_shift_ram_0]
+set_property location {2.5 894 429} [get_bd_cells util_vector_logic_0]
+set_property name xor_ip [get_bd_cells util_vector_logic_0]
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_GP0 {1}] [get_bd_cells processing_system7_0]
+endgroup
+current_project LFSR
+close_project
+create_project bram_controller /home/srihari/Hardware_securiy/Bram_controller/bram_controller -part xc7z020clg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+set_property board_part em.avnet.com:zed:part0:1.2 [current_project]
+add_files -norecurse /home/srihari/Hardware_securiy/Bram_controller/bram_control.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+file mkdir /home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv w ]
+add_files -fileset sim_1 /home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav'
+xvlog -m64 -prj tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/Bram_controller/bram_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_control
+WARNING: [VRFC 10-611] empty port in module declaration [/home/srihari/Hardware_securiy/Bram_controller/bram_control.sv:29]
+ERROR: [VRFC 10-91] DEPTH is not declared [/home/srihari/Hardware_securiy/Bram_controller/bram_control.sv:99]
+ERROR: [VRFC 10-91] DEPTH is not declared [/home/srihari/Hardware_securiy/Bram_controller/bram_control.sv:113]
+ERROR: [VRFC 10-1040] module bram_control ignored due to previous errors [/home/srihari/Hardware_securiy/Bram_controller/bram_control.sv:14]
+INFO: [USF-XSim-99] Step results log file:'/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav'
+xvlog -m64 -prj tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/Bram_controller/bram_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_control
+WARNING: [VRFC 10-611] empty port in module declaration [/home/srihari/Hardware_securiy/Bram_controller/bram_control.sv:29]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 302d54861eca4e7cbf0cebc824bf22bd --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 0 differs from formal bit length 1 for port clk [/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv:24]
+Completed static elaboration
+ERROR: [XSIM 43-3980] File "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv" Line 24 : The "System Verilog  Wildcard pattern .* " is not supported yet for simulation.
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav'
+xvlog -m64 -prj tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/Bram_controller/bram_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_control
+WARNING: [VRFC 10-611] empty port in module declaration [/home/srihari/Hardware_securiy/Bram_controller/bram_control.sv:29]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+ERROR: [VRFC 10-91] bram_full is not declared [/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv:31]
+ERROR: [VRFC 10-1040] module tb ignored due to previous errors [/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv:1]
+INFO: [USF-XSim-99] Step results log file:'/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav'
+xvlog -m64 -prj tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/Bram_controller/bram_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_control
+WARNING: [VRFC 10-611] empty port in module declaration [/home/srihari/Hardware_securiy/Bram_controller/bram_control.sv:29]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 302d54861eca4e7cbf0cebc824bf22bd --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bram_control(DW=32,AW=32,BRAM_DE...
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Apr 13 19:29:37 2016. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 13 19:29:37 2016...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 6041.062 ; gain = 0.000 ; free physical = 2436 ; free virtual = 12721
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 6072.891 ; gain = 31.828 ; free physical = 2433 ; free virtual = 12718
+add_wave {{/tb/dut/shift_count}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+$finish called at time : 1050 ns : File "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv" Line 54
+save_wave_config {/home/srihari/Hardware_securiy/Bram_controller/bram_controller/tb_behav.wcfg}
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 6077.781 ; gain = 0.000 ; free physical = 2431 ; free virtual = 12710
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav'
+xvlog -m64 -prj tb_vlog.prj
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/Bram_controller/bram_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_control
+WARNING: [VRFC 10-611] empty port in module declaration [/home/srihari/Hardware_securiy/Bram_controller/bram_control.sv:29]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 302d54861eca4e7cbf0cebc824bf22bd --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bram_control(DW=32,AW=32,BRAM_DE...
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source /home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Apr 13 19:34:06 2016. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 13 19:34:06 2016...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config /home/srihari/Hardware_securiy/Bram_controller/bram_controller/tb_behav.wcfg
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 6077.781 ; gain = 0.000 ; free physical = 2426 ; free virtual = 12706
+run all
+$finish called at time : 1050 ns : File "/home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.srcs/sim_1/new/tb.sv" Line 54

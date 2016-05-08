@@ -1,0 +1,249 @@
+17:03:36 **** Build of project with-PI_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/bram_v4_0/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/emacps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v2_2/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v2_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_0/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling bram
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/emacps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v2_2/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v2_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Finished building libraries
+17:03:44 **** Build of configuration Debug for project with-PI ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../with-PI_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../with-PI_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: with-PI.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../with-PI_bsp/ps7_cortexa9_0/lib -o "with-PI.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: with-PI.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size with-PI.elf  |tee "with-PI.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22920	   1152	  22564	  46636	   b62c	with-PI.elf
+Finished building: with-PI.elf.size
+ 
+17:04:15 **** Auto Build of configuration Debug for project with-PI ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../with-PI_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'read_bram':
+../src/helloworld.c:137:4: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+    XUartPs_Send(&Uart_Ps, &my_char, 1);
+    ^
+In file included from ../src/helloworld.c:52:0:
+../../with-PI_bsp/ps7_cortexa9_0/include/xuartps.h:447:14: note: expected 'u8 *' but argument is of type 'char *'
+ unsigned int XUartPs_Send(XUartPs *InstancePtr, u8 *BufferPtr,
+              ^
+../src/helloworld.c: In function 'Bram_full_InterruptHandler':
+../src/helloworld.c:160:7: warning: unused variable 'interrupt_char' [-Wunused-variable]
+  char interrupt_char = 'z';
+       ^
+../src/helloworld.c: In function 'Uart_keyboard_Handler':
+../src/helloworld.c:662:4: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+    XUartPs_Send(&Uart_Ps, &test, 1) ;
+    ^
+In file included from ../src/helloworld.c:52:0:
+../../with-PI_bsp/ps7_cortexa9_0/include/xuartps.h:447:14: note: expected 'u8 *' but argument is of type 'char *'
+ unsigned int XUartPs_Send(XUartPs *InstancePtr, u8 *BufferPtr,
+              ^
+../src/helloworld.c:664:4: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+    XUartPs_Send(&Uart_Ps, &test, 1);
+    ^
+In file included from ../src/helloworld.c:52:0:
+../../with-PI_bsp/ps7_cortexa9_0/include/xuartps.h:447:14: note: expected 'u8 *' but argument is of type 'char *'
+ unsigned int XUartPs_Send(XUartPs *InstancePtr, u8 *BufferPtr,
+              ^
+../src/helloworld.c:666:4: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+    XUartPs_Send(&Uart_Ps, &test, 1);
+    ^
+In file included from ../src/helloworld.c:52:0:
+../../with-PI_bsp/ps7_cortexa9_0/include/xuartps.h:447:14: note: expected 'u8 *' but argument is of type 'char *'
+ unsigned int XUartPs_Send(XUartPs *InstancePtr, u8 *BufferPtr,
+              ^
+../src/helloworld.c:668:4: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+    XUartPs_Send(&Uart_Ps, &test, 1);
+    ^
+In file included from ../src/helloworld.c:52:0:
+../../with-PI_bsp/ps7_cortexa9_0/include/xuartps.h:447:14: note: expected 'u8 *' but argument is of type 'char *'
+ unsigned int XUartPs_Send(XUartPs *InstancePtr, u8 *BufferPtr,
+              ^
+../src/helloworld.c:670:4: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+    XUartPs_Send(&Uart_Ps, &test, 1);
+    ^
+In file included from ../src/helloworld.c:52:0:
+../../with-PI_bsp/ps7_cortexa9_0/include/xuartps.h:447:14: note: expected 'u8 *' but argument is of type 'char *'
+ unsigned int XUartPs_Send(XUartPs *InstancePtr, u8 *BufferPtr,
+              ^
+../src/helloworld.c:672:4: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+    XUartPs_Send(&Uart_Ps, &test, 1);
+    ^
+In file included from ../src/helloworld.c:52:0:
+../../with-PI_bsp/ps7_cortexa9_0/include/xuartps.h:447:14: note: expected 'u8 *' but argument is of type 'char *'
+ unsigned int XUartPs_Send(XUartPs *InstancePtr, u8 *BufferPtr,
+              ^
+../src/helloworld.c:678:5: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+     XUartPs_Send(&Uart_Ps, &test, 1) ;
+     ^
+In file included from ../src/helloworld.c:52:0:
+../../with-PI_bsp/ps7_cortexa9_0/include/xuartps.h:447:14: note: expected 'u8 *' but argument is of type 'char *'
+ unsigned int XUartPs_Send(XUartPs *InstancePtr, u8 *BufferPtr,
+              ^
+../src/helloworld.c:680:5: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+     XUartPs_Send(&Uart_Ps, &test, 1);
+     ^
+In file included from ../src/helloworld.c:52:0:
+../../with-PI_bsp/ps7_cortexa9_0/include/xuartps.h:447:14: note: expected 'u8 *' but argument is of type 'char *'
+ unsigned int XUartPs_Send(XUartPs *InstancePtr, u8 *BufferPtr,
+              ^
+../src/helloworld.c:682:5: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+     XUartPs_Send(&Uart_Ps, &test, 1);
+     ^
+In file included from ../src/helloworld.c:52:0:
+../../with-PI_bsp/ps7_cortexa9_0/include/xuartps.h:447:14: note: expected 'u8 *' but argument is of type 'char *'
+ unsigned int XUartPs_Send(XUartPs *InstancePtr, u8 *BufferPtr,
+              ^
+../src/helloworld.c:684:5: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+     XUartPs_Send(&Uart_Ps, &test, 1);
+     ^
+In file included from ../src/helloworld.c:52:0:
+../../with-PI_bsp/ps7_cortexa9_0/include/xuartps.h:447:14: note: expected 'u8 *' but argument is of type 'char *'
+ unsigned int XUartPs_Send(XUartPs *InstancePtr, u8 *BufferPtr,
+              ^
+../src/helloworld.c:686:5: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+Finished building: ../src/helloworld.c
+     XUartPs_Send(&Uart_Ps, &test, 1);
+     ^
+In file included from ../src/helloworld.c:52:0:
+../../with-PI_bsp/ps7_cortexa9_0/include/xuartps.h:447:14: note: expected 'u8 *' but argument is of type 'char *'
+ unsigned int XUartPs_Send(XUartPs *InstancePtr, u8 *BufferPtr,
+              ^
+../src/helloworld.c:688:5: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+     XUartPs_Send(&Uart_Ps, &test, 1);
+     ^
+In file included from ../src/helloworld.c:52:0:
+../../with-PI_bsp/ps7_cortexa9_0/include/xuartps.h:447:14: note: expected 'u8 *' but argument is of type 'char *'
+ unsigned int XUartPs_Send(XUartPs *InstancePtr, u8 *BufferPtr,
+              ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:93:11: warning: 'RecvBuffer' defined but not used [-Wunused-variable]
+ static u8 RecvBuffer[TEST_BUFFER_SIZE]; /* Buffer for Receiving Data */
+           ^
+../src/helloworld.c:108:12: warning: 'fine_clk_delay_val' defined but not used [-Wunused-variable]
+ 
+ static int fine_clk_delay_val=0;
+            ^
+../src/helloworld.c:111:12: warning: 'fine_data_delay_val' defined but not used [-Wunused-variable]
+ static int fine_data_delay_val=0;
+            ^
+Building target: with-PI.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../with-PI_bsp/ps7_cortexa9_0/lib -o "with-PI.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: with-PI.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size with-PI.elf  |tee "with-PI.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37112	   2048	  22980	  62140	   f2bc	with-PI.elf
+Finished building: with-PI.elf.size
+ 
+17:06:16 **** Incremental Build of configuration Debug for project with-PI ****
+make all 
+make: Nothing to be done for `all'.
+17:21:10 **** Incremental Build of configuration Debug for project with-PI ****
+make all 
+make: Nothing to be done for `all'.
+17:22:03 **** Incremental Build of configuration Debug for project with-PI ****
+make all 
+make: Nothing to be done for `all'.
+18:48:04 **** Incremental Build of configuration Debug for project with-PI ****
+make all 
+make: Nothing to be done for `all'.

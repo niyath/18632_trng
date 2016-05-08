@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;data_log_de_bias/src/helloworld.c&apos; to &apos;debias_datalog.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="debias_datalog.c" stamp="1461022674735" updateReferences="true"/>
+</session>

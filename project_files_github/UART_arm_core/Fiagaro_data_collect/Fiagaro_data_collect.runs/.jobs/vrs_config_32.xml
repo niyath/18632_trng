@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="de_bias_synth" LaunchDir="/home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/Fiagaro_data_collect.runs/de_bias_synth" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="de_bias_impl" LaunchDir="/home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/Fiagaro_data_collect.runs/de_bias_impl" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="de_bias_synth"/>
+	</Run>
+</Runs>
+

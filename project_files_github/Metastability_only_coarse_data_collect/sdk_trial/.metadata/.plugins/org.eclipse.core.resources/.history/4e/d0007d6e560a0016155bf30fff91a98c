@@ -1,0 +1,14 @@
+int main()
+{
+    init_platform();
+    gpioBrightAddr = GPIO_BRIGHT_BASEADDR;
+    gpioThreshAddr = GPIO_THRESH_BASEADDR;
+
+    setupUartControl();
+
+      while (1) {
+        }
+
+    cleanup_platform();
+    return 0;
+}

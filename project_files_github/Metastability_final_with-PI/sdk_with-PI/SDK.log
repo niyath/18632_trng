@@ -1,0 +1,31 @@
+17:02:59 INFO  : Processing command line option -hwspec /home/srihari/Hardware_securiy/Metastability_final_with-PI/sdk_with-PI/metastable_ro_wrapper.hdf.
+17:03:04 WARN  : Unable to obtain port 2450 for use by XSDB Server, java.net.BindException: Address already in use
+17:03:04 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2457
+17:06:22 INFO  : System reset is completed.
+17:06:25 INFO  : FPGA configured successfully with bitstream "/home/srihari/Hardware_securiy/Metastability_final_with-PI/sdk_with-PI/metastable_ro_wrapper_hw_platform_0/metastable_ro_wrapper.bit"
+17:06:25 INFO  : ps7_init is completed.
+17:06:26 INFO  : ps7_post_config is completed.
+17:21:11 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:21:19 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:991)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:502)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:584)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:293)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:22:04 INFO  : ps7_init is completed.
+17:22:04 INFO  : ps7_post_config is completed.
+17:22:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:48:05 INFO  : ps7_init is completed.
+18:48:06 INFO  : ps7_post_config is completed.
+18:48:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:52:04 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

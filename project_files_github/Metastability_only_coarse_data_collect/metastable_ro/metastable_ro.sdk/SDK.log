@@ -1,0 +1,16 @@
+19:16:27 INFO  : Processing command line option -hwspec /home/srihari/Hardware_securiy/Metastability_RO_manual_place/metastable_ro/metastable_ro.sdk/metastable_ro_wrapper.hdf.
+19:16:44 WARN  : Unable to obtain port 2450 for use by XSDB Server, java.net.BindException: Address already in use
+19:16:44 WARN  : Unable to obtain port 2457 for use by XSDB Server, java.net.BindException: Address already in use
+19:16:44 WARN  : Unable to obtain port 2464 for use by XSDB Server, java.net.BindException: Address already in use
+19:16:44 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2471
+19:19:55 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use
+19:20:00 INFO  : System reset is completed.
+19:20:03 INFO  : FPGA configured successfully with bitstream "/home/srihari/Hardware_securiy/Metastability_RO_manual_place/metastable_ro/metastable_ro.sdk/metastable_ro_wrapper_hw_platform_0/metastable_ro_wrapper.bit"
+19:20:04 INFO  : ps7_init is completed.
+19:20:04 INFO  : ps7_post_config is completed.
+19:20:50 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:20:52 INFO  : System reset is completed.
+19:20:55 INFO  : FPGA configured successfully with bitstream "/home/srihari/Hardware_securiy/Metastability_RO_manual_place/metastable_ro/metastable_ro.sdk/metastable_ro_wrapper_hw_platform_0/metastable_ro_wrapper.bit"
+19:20:56 INFO  : ps7_init is completed.
+19:20:56 INFO  : ps7_post_config is completed.
+19:24:10 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

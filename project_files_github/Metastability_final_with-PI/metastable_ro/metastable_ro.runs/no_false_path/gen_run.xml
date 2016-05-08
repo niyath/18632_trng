@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="no_false_path" LaunchPart="xc7z020clg484-1" LaunchTime="1462142461">
+  <File Type="VDS-TIMING-PB" Name="metastable_ro_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="metastable_ro_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="metastable_ro_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="metastable_ro_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="metastable_ro_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="metastable_ro_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="metastable_ro_wrapper.vds"/>
+  <File Type="PA-TCL" Name="metastable_ro_wrapper.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/no_false_path/no_false_path.psg"/>
+  <File Type="VDS-HWDEF" Name="metastable_ro_wrapper.hwdef"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/no_false_path/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/no_false_path/constrs_in.xml"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/metastable_ro/metastable_ro.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/metastable_ro_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/metastable_ro/hdl/metastable_ro_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1462134957"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/metastable_ro/ip/metastable_ro_delay_top_0_0/metastable_ro_delay_top_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/metastable_ro/ip/metastable_ro_PI_controller_0_1/metastable_ro_PI_controller_0_1.upgrade_log"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="metastable_ro_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/meta.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/no_false_path.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/64coarse.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/meta.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

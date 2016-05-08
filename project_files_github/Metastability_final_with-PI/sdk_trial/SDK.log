@@ -1,0 +1,66 @@
+13:36:11 INFO  : Processing command line option -hwspec /home/srihari/Hardware_securiy/Metastability_only_coarse_data_collect/sdk_trial/metastable_ro_wrapper.hdf.
+13:36:14 WARN  : Unable to obtain port 2450 for use by XSDB Server, java.net.BindException: Address already in use
+13:36:14 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2457
+14:37:24 INFO  : ps7_init is completed.
+14:37:25 INFO  : ps7_post_config is completed.
+14:37:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:44:02 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:12:03 INFO  : Processing command line option -hwspec /home/srihari/Hardware_securiy/Metastability_only_coarse_data_collect/sdk_trial/metastable_ro_wrapper.hdf.
+22:12:05 WARN  : Unable to obtain port 2450 for use by XSDB Server, java.net.BindException: Address already in use
+22:12:05 WARN  : Unable to obtain port 2457 for use by XSDB Server, java.net.BindException: Address already in use
+22:12:05 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2464
+22:12:06 INFO  : Checking for hwspec changes in the project metastable_ro_wrapper_hw_platform_4.
+22:12:09 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1461982074000,  Project:1461862666000
+22:12:09 INFO  : The hardware specification for project 'metastable_ro_wrapper_hw_platform_4' is different from /home/srihari/Hardware_securiy/Metastability_only_coarse_data_collect/sdk_trial/metastable_ro_wrapper.hdf.
+22:12:10 INFO  : Copied contents of /home/srihari/Hardware_securiy/Metastability_only_coarse_data_collect/sdk_trial/metastable_ro_wrapper.hdf into /metastable_ro_wrapper_hw_platform_4/system.hdf.
+22:12:10 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:12:12 INFO  : 
+22:12:24 INFO  : Updating hardware inferred compiler options for metastability_collect_data.
+22:12:24 INFO  : Clearing existing target manager status.
+22:14:39 INFO  : ps7_init is completed.
+22:14:39 INFO  : ps7_post_config is completed.
+22:14:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:24:51 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:24:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:27:01 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:27:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:28:42 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:28:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:40:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:40:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:49:33 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:49:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:52:25 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:52:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:53:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:53:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:54:32 INFO  : ps7_init is completed.
+22:54:32 INFO  : ps7_post_config is completed.
+22:54:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:55:13 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:55:15 INFO  : System reset is completed.
+22:55:18 INFO  : FPGA configured successfully with bitstream "/home/srihari/Hardware_securiy/Metastability_only_coarse_data_collect/sdk_trial/metastable_ro_wrapper_hw_platform_4/metastable_ro_wrapper.bit"
+22:55:18 INFO  : ps7_init is completed.
+22:55:19 INFO  : ps7_post_config is completed.
+22:56:12 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:56:13 INFO  : System reset is completed.
+22:56:16 INFO  : FPGA configured successfully with bitstream "/home/srihari/Hardware_securiy/Metastability_only_coarse_data_collect/sdk_trial/metastable_ro_wrapper_hw_platform_4/metastable_ro_wrapper.bit"
+22:56:17 INFO  : ps7_init is completed.
+22:56:17 INFO  : ps7_post_config is completed.
+22:57:36 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:57:52 INFO  : Processing command line option -hwspec /home/srihari/Hardware_securiy/Metastability_only_coarse_data_collect/sdk_trial/metastable_ro_wrapper.hdf.
+22:57:54 WARN  : Unable to obtain port 2450 for use by XSDB Server, java.net.BindException: Address already in use
+22:57:54 WARN  : Unable to obtain port 2457 for use by XSDB Server, java.net.BindException: Address already in use
+22:57:54 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2464
+22:57:55 INFO  : Checking for hwspec changes in the project metastable_ro_wrapper_hw_platform_4.
+23:02:43 INFO  : Processing command line option -hwspec /home/srihari/Hardware_securiy/Metastability_only_coarse_data_collect/sdk_trial/metastable_ro_wrapper.hdf.
+23:02:45 WARN  : Unable to obtain port 2450 for use by XSDB Server, java.net.BindException: Address already in use
+23:02:45 WARN  : Unable to obtain port 2457 for use by XSDB Server, java.net.BindException: Address already in use
+23:02:45 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2464
+23:02:46 INFO  : Checking for hwspec changes in the project metastable_ro_wrapper_hw_platform_4.
+23:03:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:10:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:10:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:13:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:13:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:19:33 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

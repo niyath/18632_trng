@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hwsession version="1" minor="1">
+  <device name="xc7z020_1" gui_info=""/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7z020_1" gui_info="">
+      <Properties Property="PROBES.FILE" value=""/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_2/$_project_name__wrapper.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="metastable_ro_i/ila_0" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CONTROL.TRIGGER_POSITION" value="512"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[31]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[30]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[29]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[28]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[27]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[26]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[25]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[24]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[23]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[22]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[21]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[20]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[19]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[18]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[17]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[16]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[15]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[14]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[13]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[12]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[11]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[10]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[9]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[8]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[7]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[6]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[5]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[4]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[3]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[2]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[1]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio2_io_o[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[31]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[30]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[29]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[28]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[27]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[26]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[25]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[24]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[23]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[22]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[21]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[20]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[19]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[18]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[17]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[16]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[15]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[14]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[13]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[12]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[11]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[10]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[9]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[8]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[7]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[6]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[5]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[4]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[3]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[2]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[1]"/>
+        <net name="metastable_ro_i/axi_gpio_0_gpio_io_o[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="metastable_ro_i/clk_wiz_0_clk_out1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="metastable_ro_i/clk_wiz_0_locked"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[31]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[30]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[29]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[28]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[27]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[26]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[25]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[24]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[23]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[22]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[21]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[20]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[19]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[18]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[17]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[16]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[15]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[14]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[13]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[12]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[11]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[10]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[9]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[8]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[7]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[6]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[5]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[4]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[3]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[2]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[1]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio2_io_o[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[31]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[30]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[29]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[28]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[27]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[26]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[25]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[24]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[23]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[22]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[21]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[20]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[19]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[18]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[17]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[16]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[15]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[14]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[13]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[12]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[11]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[10]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[9]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[8]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[7]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[6]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[5]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[4]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[3]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[2]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[1]"/>
+        <net name="metastable_ro_i/coarse_delay_ctrl_gpio_io_o[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="metastable_ro_i/delay_top_0_registered_data"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="metastable_ro_i/processing_system7_0_FCLK_CLK0"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

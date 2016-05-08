@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Apr 30 21:52:13 2016
+# Process ID: 19590
+# Log file: /home/srihari/Hardware_securiy/Metastability_only_coarse_data_collect/metastable_ro/metastable_ro.runs/no_false_path/metastable_ro_wrapper.vds
+# Journal file: /home/srihari/Hardware_securiy/Metastability_only_coarse_data_collect/metastable_ro/metastable_ro.runs/no_false_path/vivado.jou
+#-----------------------------------------------------------
+source metastable_ro_wrapper.tcl

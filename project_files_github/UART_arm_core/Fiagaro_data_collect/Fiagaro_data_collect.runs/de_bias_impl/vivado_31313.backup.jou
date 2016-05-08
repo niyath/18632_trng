@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Apr 18 18:41:49 2016
+# Process ID: 31093
+# Log file: /home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/Fiagaro_data_collect.runs/de_bias_impl/design_1_wrapper.vdi
+# Journal file: /home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/Fiagaro_data_collect.runs/de_bias_impl/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

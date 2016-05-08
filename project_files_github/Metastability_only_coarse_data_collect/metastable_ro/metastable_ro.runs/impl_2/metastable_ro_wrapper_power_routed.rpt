@@ -1,0 +1,595 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date             : Sat Apr 30 21:56:30 2016
+| Host             : srihari running 64-bit Ubuntu 14.04.4 LTS
+| Command          : report_power -file metastable_ro_wrapper_power_routed.rpt -pb metastable_ro_wrapper_power_summary_routed.pb
+| Design           : metastable_ro_wrapper
+| Device           : xc7z020clg484-1
+| Design State     : Routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-------+
+| Total On-Chip Power (W)  | 1.848 |
+| Dynamic (W)              | 1.685 |
+| Device Static (W)        | 0.164 |
+| Effective TJA (C/W)      | 11.5  |
+| Max Ambient (C)          | 63.7  |
+| Junction Temperature (C) | 46.3  |
+| Confidence Level         | Low   |
+| Setting File             | ---   |
+| Simulation Activity File | ---   |
+| Design Nets Matched      | NA    |
++--------------------------+-------+
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.018 |        8 |       --- |             --- |
+| Slice Logic             |     0.012 |     7142 |       --- |             --- |
+|   LUT as Logic          |     0.011 |     2770 |     53200 |            5.20 |
+|   Register              |    <0.001 |     2921 |    106400 |            2.74 |
+|   CARRY4                |    <0.001 |      132 |     13300 |            0.99 |
+|   LUT as Shift Register |    <0.001 |      165 |     17400 |            0.94 |
+|   Others                |     0.000 |      516 |       --- |             --- |
+| Signals                 |     0.011 |     4808 |       --- |             --- |
+| Block RAM               |     0.002 |        2 |       140 |            1.42 |
+| MMCM                    |     0.106 |        1 |         4 |           25.00 |
+| I/O                     |     0.008 |       11 |       200 |            5.50 |
+| PS7                     |     1.529 |        1 |       --- |             --- |
+| Static Power            |     0.164 |          |           |                 |
+| Total                   |     1.848 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.058 |       0.043 |      0.016 |
+| Vccaux    |       1.800 |     0.080 |       0.059 |      0.021 |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco25    |       2.500 |     0.004 |       0.003 |      0.001 |
+| Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.750 |       0.718 |      0.032 |
+| Vccpaux   |       1.800 |     0.061 |       0.051 |      0.010 |
+| Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |
+| Vcco_mio0 |       3.300 |     0.003 |       0.002 |      0.001 |
+| Vcco_mio1 |       1.800 |     0.003 |       0.002 |      0.001 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++------------------------------------+-------------------------------------------------------------------+-----------------+
+| Clock                              | Domain                                                            | Constraint (ns) |
++------------------------------------+-------------------------------------------------------------------+-----------------+
+| clk_fpga_0                         | metastable_ro_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]  |            10.0 |
+| clk_fpga_1                         | metastable_ro_i/processing_system7_0/inst/FCLK_CLK1               |            20.0 |
+| clk_fpga_1                         | metastable_ro_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]  |            20.0 |
+| clk_out1_metastable_ro_clk_wiz_0_0 | metastable_ro_i/clk_wiz_0/inst/clk_out1_metastable_ro_clk_wiz_0_0 |            10.0 |
+| clk_out2_metastable_ro_clk_wiz_0_0 | metastable_ro_i/clk_wiz_0/inst/clk_out2_metastable_ro_clk_wiz_0_0 |            10.0 |
+| clkfbout_metastable_ro_clk_wiz_0_0 | metastable_ro_i/clk_wiz_0/inst/clkfbout_metastable_ro_clk_wiz_0_0 |            20.0 |
++------------------------------------+-------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------------------------------------------------+-----------+
+| Name                                                     | Power (W) |
++----------------------------------------------------------+-----------+
+| metastable_ro_wrapper                                    |     1.685 |
+|   metastable_ro_i                                        |     1.677 |
+|     axi_bram_ctrl_0                                      |     0.002 |
+|       U0                                                 |     0.002 |
+|         gext_inst.abcv4_0_ext_inst                       |     0.002 |
+|           GEN_AXI4.I_FULL_AXI                            |     0.002 |
+|             GEN_ARB.I_SNG_PORT                           |    <0.001 |
+|             I_RD_CHNL                                    |     0.002 |
+|               I_WRAP_BRST                                |    <0.001 |
+|             I_WR_CHNL                                    |    <0.001 |
+|               I_WRAP_BRST                                |    <0.001 |
+|     axi_gpio_0                                           |    <0.001 |
+|       U0                                                 |    <0.001 |
+|         AXI_LITE_IPIF_I                                  |    <0.001 |
+|           I_SLAVE_ATTACHMENT                             |    <0.001 |
+|             I_DECODER                                    |    <0.001 |
+|         gpio_core_1                                      |    <0.001 |
+|     axi_gpio_1                                           |    <0.001 |
+|       U0                                                 |    <0.001 |
+|         AXI_LITE_IPIF_I                                  |    <0.001 |
+|           I_SLAVE_ATTACHMENT                             |    <0.001 |
+|             I_DECODER                                    |    <0.001 |
+|         INTR_CTRLR_GEN.INTERRUPT_CONTROL_I               |    <0.001 |
+|         gpio_core_1                                      |    <0.001 |
+|           Dual.INPUT_DOUBLE_REGS4                        |    <0.001 |
+|     blk_mem_gen_0                                        |     0.002 |
+|       U0                                                 |     0.002 |
+|         inst_blk_mem_gen                                 |     0.002 |
+|           gnative_mem_map_bmg.native_mem_map_blk_mem_gen |     0.002 |
+|             valid.cstr                                   |     0.002 |
+|               ramloop[0].ram.r                           |    <0.001 |
+|                 prim_noinit.ram                          |    <0.001 |
+|               ramloop[1].ram.r                           |     0.001 |
+|                 prim_noinit.ram                          |     0.001 |
+|     bram_control_0                                       |    <0.001 |
+|       inst                                               |    <0.001 |
+|     clk_wiz_0                                            |     0.106 |
+|       inst                                               |     0.106 |
+|     coarse_delay_ctrl                                    |     0.002 |
+|       U0                                                 |     0.002 |
+|         AXI_LITE_IPIF_I                                  |    <0.001 |
+|           I_SLAVE_ATTACHMENT                             |    <0.001 |
+|             I_DECODER                                    |    <0.001 |
+|         gpio_core_1                                      |    <0.001 |
+|     delay_top_0                                          |     0.005 |
+|       inst                                               |     0.005 |
+|         coarse_delay_inst                                |     0.005 |
+|           genblk1[0].lut_coarse_delay_inst_data          |    <0.001 |
+|           genblk1[10].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[11].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[12].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[13].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[14].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[15].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[16].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[17].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[18].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[19].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[1].lut_coarse_delay_inst_data          |    <0.001 |
+|           genblk1[20].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[21].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[22].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[23].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[24].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[25].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[26].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[27].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[28].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[29].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[2].lut_coarse_delay_inst_data          |    <0.001 |
+|           genblk1[30].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[31].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[32].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[33].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[34].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[35].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[36].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[37].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[38].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[39].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[3].lut_coarse_delay_inst_data          |    <0.001 |
+|           genblk1[40].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[41].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[42].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[43].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[44].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[45].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[46].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[47].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[48].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[49].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[4].lut_coarse_delay_inst_data          |    <0.001 |
+|           genblk1[50].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[51].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[52].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[53].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[54].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[55].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[56].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[57].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[58].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[59].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[5].lut_coarse_delay_inst_data          |    <0.001 |
+|           genblk1[60].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[61].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[62].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[63].lut_coarse_delay_inst_data         |    <0.001 |
+|           genblk1[6].lut_coarse_delay_inst_data          |    <0.001 |
+|           genblk1[7].lut_coarse_delay_inst_data          |    <0.001 |
+|           genblk1[8].lut_coarse_delay_inst_data          |    <0.001 |
+|           genblk1[9].lut_coarse_delay_inst_data          |    <0.001 |
+|           genblk2[0].lut_coarse_delay_inst_clk           |    <0.001 |
+|           genblk2[10].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[11].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[12].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[13].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[14].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[15].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[16].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[17].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[18].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[19].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[1].lut_coarse_delay_inst_clk           |    <0.001 |
+|           genblk2[20].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[21].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[22].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[23].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[24].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[25].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[26].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[27].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[28].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[29].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[2].lut_coarse_delay_inst_clk           |    <0.001 |
+|           genblk2[30].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[31].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[32].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[33].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[34].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[35].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[36].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[37].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[38].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[39].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[3].lut_coarse_delay_inst_clk           |    <0.001 |
+|           genblk2[40].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[41].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[42].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[43].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[44].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[45].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[46].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[47].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[48].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[49].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[4].lut_coarse_delay_inst_clk           |    <0.001 |
+|           genblk2[50].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[51].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[52].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[53].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[54].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[55].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[56].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[57].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[58].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[59].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[5].lut_coarse_delay_inst_clk           |    <0.001 |
+|           genblk2[60].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[61].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[62].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[63].lut_coarse_delay_inst_clk          |    <0.001 |
+|           genblk2[6].lut_coarse_delay_inst_clk           |    <0.001 |
+|           genblk2[7].lut_coarse_delay_inst_clk           |    <0.001 |
+|           genblk2[8].lut_coarse_delay_inst_clk           |    <0.001 |
+|           genblk2[9].lut_coarse_delay_inst_clk           |    <0.001 |
+|     fine_delay_ctrl                                      |     0.002 |
+|       U0                                                 |     0.002 |
+|         AXI_LITE_IPIF_I                                  |    <0.001 |
+|           I_SLAVE_ATTACHMENT                             |    <0.001 |
+|             I_DECODER                                    |    <0.001 |
+|         gpio_core_1                                      |    <0.001 |
+|     lfsr_filter_0                                        |     0.002 |
+|       inst                                               |     0.002 |
+|         lfsr_reg[0].U                                    |    <0.001 |
+|         lfsr_reg[100].U                                  |    <0.001 |
+|         lfsr_reg[101].U                                  |    <0.001 |
+|         lfsr_reg[102].U                                  |    <0.001 |
+|         lfsr_reg[103].U                                  |    <0.001 |
+|         lfsr_reg[104].U                                  |    <0.001 |
+|         lfsr_reg[105].U                                  |    <0.001 |
+|         lfsr_reg[106].U                                  |    <0.001 |
+|         lfsr_reg[107].U                                  |    <0.001 |
+|         lfsr_reg[108].U                                  |    <0.001 |
+|         lfsr_reg[109].U                                  |    <0.001 |
+|         lfsr_reg[10].U                                   |    <0.001 |
+|         lfsr_reg[110].U                                  |    <0.001 |
+|         lfsr_reg[111].U                                  |    <0.001 |
+|         lfsr_reg[112].U                                  |    <0.001 |
+|         lfsr_reg[113].U                                  |    <0.001 |
+|         lfsr_reg[114].U                                  |    <0.001 |
+|         lfsr_reg[115].U                                  |    <0.001 |
+|         lfsr_reg[116].U                                  |    <0.001 |
+|         lfsr_reg[117].U                                  |    <0.001 |
+|         lfsr_reg[118].U                                  |    <0.001 |
+|         lfsr_reg[119].U                                  |    <0.001 |
+|         lfsr_reg[11].U                                   |    <0.001 |
+|         lfsr_reg[120].U                                  |    <0.001 |
+|         lfsr_reg[121].U                                  |    <0.001 |
+|         lfsr_reg[122].U                                  |    <0.001 |
+|         lfsr_reg[123].U                                  |    <0.001 |
+|         lfsr_reg[124].U                                  |    <0.001 |
+|         lfsr_reg[125].U                                  |    <0.001 |
+|         lfsr_reg[126].U                                  |    <0.001 |
+|         lfsr_reg[127].U                                  |    <0.001 |
+|         lfsr_reg[12].U                                   |    <0.001 |
+|         lfsr_reg[13].U                                   |    <0.001 |
+|         lfsr_reg[14].U                                   |    <0.001 |
+|         lfsr_reg[15].U                                   |    <0.001 |
+|         lfsr_reg[16].U                                   |    <0.001 |
+|         lfsr_reg[17].U                                   |    <0.001 |
+|         lfsr_reg[18].U                                   |    <0.001 |
+|         lfsr_reg[19].U                                   |    <0.001 |
+|         lfsr_reg[1].U                                    |    <0.001 |
+|         lfsr_reg[20].U                                   |    <0.001 |
+|         lfsr_reg[21].U                                   |    <0.001 |
+|         lfsr_reg[22].U                                   |    <0.001 |
+|         lfsr_reg[23].U                                   |    <0.001 |
+|         lfsr_reg[24].U                                   |    <0.001 |
+|         lfsr_reg[25].U                                   |    <0.001 |
+|         lfsr_reg[26].U                                   |    <0.001 |
+|         lfsr_reg[27].U                                   |    <0.001 |
+|         lfsr_reg[28].U                                   |    <0.001 |
+|         lfsr_reg[29].U                                   |    <0.001 |
+|         lfsr_reg[2].U                                    |    <0.001 |
+|         lfsr_reg[30].U                                   |    <0.001 |
+|         lfsr_reg[31].U                                   |    <0.001 |
+|         lfsr_reg[32].U                                   |    <0.001 |
+|         lfsr_reg[33].U                                   |    <0.001 |
+|         lfsr_reg[34].U                                   |    <0.001 |
+|         lfsr_reg[35].U                                   |    <0.001 |
+|         lfsr_reg[36].U                                   |    <0.001 |
+|         lfsr_reg[37].U                                   |    <0.001 |
+|         lfsr_reg[38].U                                   |    <0.001 |
+|         lfsr_reg[39].U                                   |    <0.001 |
+|         lfsr_reg[3].U                                    |    <0.001 |
+|         lfsr_reg[40].U                                   |    <0.001 |
+|         lfsr_reg[41].U                                   |    <0.001 |
+|         lfsr_reg[42].U                                   |    <0.001 |
+|         lfsr_reg[43].U                                   |    <0.001 |
+|         lfsr_reg[44].U                                   |    <0.001 |
+|         lfsr_reg[45].U                                   |    <0.001 |
+|         lfsr_reg[46].U                                   |    <0.001 |
+|         lfsr_reg[47].U                                   |    <0.001 |
+|         lfsr_reg[48].U                                   |    <0.001 |
+|         lfsr_reg[49].U                                   |    <0.001 |
+|         lfsr_reg[4].U                                    |    <0.001 |
+|         lfsr_reg[50].U                                   |    <0.001 |
+|         lfsr_reg[51].U                                   |    <0.001 |
+|         lfsr_reg[52].U                                   |    <0.001 |
+|         lfsr_reg[53].U                                   |    <0.001 |
+|         lfsr_reg[54].U                                   |    <0.001 |
+|         lfsr_reg[55].U                                   |    <0.001 |
+|         lfsr_reg[56].U                                   |    <0.001 |
+|         lfsr_reg[57].U                                   |    <0.001 |
+|         lfsr_reg[58].U                                   |    <0.001 |
+|         lfsr_reg[59].U                                   |    <0.001 |
+|         lfsr_reg[5].U                                    |    <0.001 |
+|         lfsr_reg[60].U                                   |    <0.001 |
+|         lfsr_reg[61].U                                   |    <0.001 |
+|         lfsr_reg[62].U                                   |    <0.001 |
+|         lfsr_reg[63].U                                   |    <0.001 |
+|         lfsr_reg[64].U                                   |    <0.001 |
+|         lfsr_reg[65].U                                   |    <0.001 |
+|         lfsr_reg[66].U                                   |    <0.001 |
+|         lfsr_reg[67].U                                   |    <0.001 |
+|         lfsr_reg[68].U                                   |    <0.001 |
+|         lfsr_reg[69].U                                   |    <0.001 |
+|         lfsr_reg[6].U                                    |    <0.001 |
+|         lfsr_reg[70].U                                   |    <0.001 |
+|         lfsr_reg[71].U                                   |    <0.001 |
+|         lfsr_reg[72].U                                   |    <0.001 |
+|         lfsr_reg[73].U                                   |    <0.001 |
+|         lfsr_reg[74].U                                   |    <0.001 |
+|         lfsr_reg[75].U                                   |    <0.001 |
+|         lfsr_reg[76].U                                   |    <0.001 |
+|         lfsr_reg[77].U                                   |    <0.001 |
+|         lfsr_reg[78].U                                   |    <0.001 |
+|         lfsr_reg[79].U                                   |    <0.001 |
+|         lfsr_reg[7].U                                    |    <0.001 |
+|         lfsr_reg[80].U                                   |    <0.001 |
+|         lfsr_reg[81].U                                   |    <0.001 |
+|         lfsr_reg[82].U                                   |    <0.001 |
+|         lfsr_reg[83].U                                   |    <0.001 |
+|         lfsr_reg[84].U                                   |    <0.001 |
+|         lfsr_reg[85].U                                   |    <0.001 |
+|         lfsr_reg[86].U                                   |    <0.001 |
+|         lfsr_reg[87].U                                   |    <0.001 |
+|         lfsr_reg[88].U                                   |    <0.001 |
+|         lfsr_reg[89].U                                   |    <0.001 |
+|         lfsr_reg[8].U                                    |    <0.001 |
+|         lfsr_reg[90].U                                   |    <0.001 |
+|         lfsr_reg[91].U                                   |    <0.001 |
+|         lfsr_reg[92].U                                   |    <0.001 |
+|         lfsr_reg[93].U                                   |    <0.001 |
+|         lfsr_reg[94].U                                   |    <0.001 |
+|         lfsr_reg[95].U                                   |    <0.001 |
+|         lfsr_reg[96].U                                   |    <0.001 |
+|         lfsr_reg[97].U                                   |    <0.001 |
+|         lfsr_reg[98].U                                   |    <0.001 |
+|         lfsr_reg[99].U                                   |    <0.001 |
+|         lfsr_reg[9].U                                    |    <0.001 |
+|     processing_system7_0                                 |     1.530 |
+|       inst                                               |     1.530 |
+|     processing_system7_0_axi_periph                      |     0.021 |
+|       m00_couplers                                       |     0.005 |
+|         auto_pc                                          |     0.005 |
+|           inst                                           |     0.005 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s         |     0.005 |
+|               RD.ar_channel_0                            |     0.001 |
+|                 ar_cmd_fsm_0                             |    <0.001 |
+|                 cmd_translator_0                         |    <0.001 |
+|                   incr_cmd_0                             |    <0.001 |
+|                   wrap_cmd_0                             |    <0.001 |
+|               RD.r_channel_0                             |     0.001 |
+|                 rd_data_fifo_0                           |     0.001 |
+|                 transaction_fifo_0                       |    <0.001 |
+|               SI_REG                                     |     0.001 |
+|                 ar_pipe                                  |    <0.001 |
+|                 aw_pipe                                  |    <0.001 |
+|                 b_pipe                                   |    <0.001 |
+|                 r_pipe                                   |    <0.001 |
+|               WR.aw_channel_0                            |    <0.001 |
+|                 aw_cmd_fsm_0                             |    <0.001 |
+|                 cmd_translator_0                         |    <0.001 |
+|                   incr_cmd_0                             |    <0.001 |
+|                   wrap_cmd_0                             |    <0.001 |
+|               WR.b_channel_0                             |    <0.001 |
+|                 bid_fifo_0                               |    <0.001 |
+|                 bresp_fifo_0                             |    <0.001 |
+|       m01_couplers                                       |     0.005 |
+|         auto_pc                                          |     0.005 |
+|           inst                                           |     0.005 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s         |     0.005 |
+|               RD.ar_channel_0                            |    <0.001 |
+|                 ar_cmd_fsm_0                             |    <0.001 |
+|                 cmd_translator_0                         |    <0.001 |
+|                   incr_cmd_0                             |    <0.001 |
+|                   wrap_cmd_0                             |    <0.001 |
+|               RD.r_channel_0                             |     0.001 |
+|                 rd_data_fifo_0                           |     0.001 |
+|                 transaction_fifo_0                       |    <0.001 |
+|               SI_REG                                     |     0.001 |
+|                 ar_pipe                                  |    <0.001 |
+|                 aw_pipe                                  |    <0.001 |
+|                 b_pipe                                   |    <0.001 |
+|                 r_pipe                                   |    <0.001 |
+|               WR.aw_channel_0                            |    <0.001 |
+|                 aw_cmd_fsm_0                             |    <0.001 |
+|                 cmd_translator_0                         |    <0.001 |
+|                   incr_cmd_0                             |    <0.001 |
+|                   wrap_cmd_0                             |    <0.001 |
+|               WR.b_channel_0                             |    <0.001 |
+|                 bid_fifo_0                               |    <0.001 |
+|                 bresp_fifo_0                             |    <0.001 |
+|       m02_couplers                                       |     0.005 |
+|         auto_pc                                          |     0.005 |
+|           inst                                           |     0.005 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s         |     0.005 |
+|               RD.ar_channel_0                            |    <0.001 |
+|                 ar_cmd_fsm_0                             |    <0.001 |
+|                 cmd_translator_0                         |    <0.001 |
+|                   incr_cmd_0                             |    <0.001 |
+|                   wrap_cmd_0                             |    <0.001 |
+|               RD.r_channel_0                             |     0.001 |
+|                 rd_data_fifo_0                           |     0.001 |
+|                 transaction_fifo_0                       |    <0.001 |
+|               SI_REG                                     |     0.001 |
+|                 ar_pipe                                  |    <0.001 |
+|                 aw_pipe                                  |    <0.001 |
+|                 b_pipe                                   |    <0.001 |
+|                 r_pipe                                   |    <0.001 |
+|               WR.aw_channel_0                            |    <0.001 |
+|                 aw_cmd_fsm_0                             |    <0.001 |
+|                 cmd_translator_0                         |    <0.001 |
+|                   incr_cmd_0                             |    <0.001 |
+|                   wrap_cmd_0                             |    <0.001 |
+|               WR.b_channel_0                             |    <0.001 |
+|                 bid_fifo_0                               |    <0.001 |
+|                 bresp_fifo_0                             |    <0.001 |
+|       m04_couplers                                       |     0.005 |
+|         auto_pc                                          |     0.005 |
+|           inst                                           |     0.005 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s         |     0.005 |
+|               RD.ar_channel_0                            |    <0.001 |
+|                 ar_cmd_fsm_0                             |    <0.001 |
+|                 cmd_translator_0                         |    <0.001 |
+|                   incr_cmd_0                             |    <0.001 |
+|                   wrap_cmd_0                             |    <0.001 |
+|               RD.r_channel_0                             |     0.001 |
+|                 rd_data_fifo_0                           |    <0.001 |
+|                 transaction_fifo_0                       |    <0.001 |
+|               SI_REG                                     |     0.001 |
+|                 ar_pipe                                  |    <0.001 |
+|                 aw_pipe                                  |    <0.001 |
+|                 b_pipe                                   |    <0.001 |
+|                 r_pipe                                   |    <0.001 |
+|               WR.aw_channel_0                            |     0.001 |
+|                 aw_cmd_fsm_0                             |    <0.001 |
+|                 cmd_translator_0                         |    <0.001 |
+|                   incr_cmd_0                             |    <0.001 |
+|                   wrap_cmd_0                             |    <0.001 |
+|               WR.b_channel_0                             |    <0.001 |
+|                 bid_fifo_0                               |    <0.001 |
+|                 bresp_fifo_0                             |    <0.001 |
+|       s00_couplers                                       |     0.000 |
+|         auto_pc                                          |     0.000 |
+|       xbar                                               |     0.002 |
+|         inst                                             |     0.002 |
+|           gen_sasd.crossbar_sasd_0                       |     0.002 |
+|             addr_arbiter_inst                            |     0.001 |
+|             gen_decerr.decerr_slave_inst                 |    <0.001 |
+|             reg_slice_r                                  |    <0.001 |
+|             splitter_ar                                  |    <0.001 |
+|             splitter_aw                                  |    <0.001 |
+|     rst_inv                                              |     0.000 |
+|     rst_or_uart_complete                                 |    <0.001 |
+|     rst_processing_system7_0_100M                        |    <0.001 |
+|       U0                                                 |    <0.001 |
+|         EXT_LPF                                          |    <0.001 |
+|           ACTIVE_LOW_EXT.ACT_LO_EXT                      |    <0.001 |
+|         SEQ                                              |    <0.001 |
+|           SEQ_COUNTER                                    |    <0.001 |
+|     trng_control_0                                       |     0.002 |
+|       inst                                               |     0.002 |
+|     uart_tranf_complete_inv                              |     0.000 |
+|     util_vector_logic_0                                  |    <0.001 |
+|     xlconcat_0                                           |     0.000 |
++----------------------------------------------------------+-----------+
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="ILA">
+        <Dashboard columnResizable="1" key="ILA" rowResizable="0" title="ILA">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="2" height="589"
+                layout="JideBoxLayout" vgap="6" width="301">
+                <Gadget height="157" key="Trigger Capture Status" width="301"/>
+                <Gadget height="209" key="Basic Trigger Setup" width="301">
+                    <Probe name="design_1_i/bram_control_0_bram_full"/>
+                    <Probe name="design_1_i/axi_gpio_0_ip2intc_irpt"/>
+                    <Probe name="design_1_i/bram_control_0_bram_we[3:0]"/>
+                    <Probe name="design_1_i/axi_gpio_0_gpio2_io_o"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

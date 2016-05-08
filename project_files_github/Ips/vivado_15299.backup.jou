@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Apr 13 19:44:48 2016
+# Process ID: 13031
+# Log file: /home/srihari/Hardware_securiy/Ips/vivado.log
+# Journal file: /home/srihari/Hardware_securiy/Ips/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/srihari/Hardware_securiy/Bram_controller/bram_controller/bram_controller.xpr
+launch_simulation
+launch_simulation

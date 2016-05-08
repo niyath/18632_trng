@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Apr 13 20:34:49 2016
+# Process ID: 15299
+# Log file: /home/srihari/Hardware_securiy/Ips/vivado.log
+# Journal file: /home/srihari/Hardware_securiy/Ips/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project Uart_trial /home/srihari/Hardware_securiy/uart_TRIAL/Uart_trial -part xc7z020clg484-1
+set_property board_part em.avnet.com:zed:part0:1.2 [current_project]
+create_bd_design "design_1"
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+generate_target all [get_files  /home/srihari/Hardware_securiy/uart_TRIAL/Uart_trial/Uart_trial.srcs/sources_1/bd/design_1/design_1.bd]
+startgroup
+create_bd_port -dir I -type clk M_AXI_GP0_ACLK
+connect_bd_net [get_bd_pins /processing_system7_0/M_AXI_GP0_ACLK] [get_bd_ports M_AXI_GP0_ACLK]
+endgroup
+make_wrapper -files [get_files /home/srihari/Hardware_securiy/uart_TRIAL/Uart_trial/Uart_trial.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse /home/srihari/Hardware_securiy/uart_TRIAL/Uart_trial/Uart_trial.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+delete_bd_objs [get_bd_nets M_AXI_GP0_ACLK_1]
+delete_bd_objs [get_bd_ports M_AXI_GP0_ACLK]
+make_wrapper -files [get_files /home/srihari/Hardware_securiy/uart_TRIAL/Uart_trial/Uart_trial.srcs/sources_1/bd/design_1/design_1.bd] -top
+open_bd_design {/home/srihari/Hardware_securiy/uart_TRIAL/Uart_trial/Uart_trial.srcs/sources_1/bd/design_1/design_1.bd}
+open_project /home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/Fiagaro_data_collect.xpr
+open_bd_design {/home/srihari/Hardware_securiy/UART_arm_core/Fiagaro_data_collect/Fiagaro_data_collect.srcs/sources_1/bd/design_1/design_1.bd}
+current_project Uart_trial
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
+make_wrapper -files [get_files /home/srihari/Hardware_securiy/uart_TRIAL/Uart_trial/Uart_trial.srcs/sources_1/bd/design_1/design_1.bd] -top
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+file mkdir /home/srihari/Hardware_securiy/uart_TRIAL/Uart_trial/Uart_trial.sdk
+file copy -force /home/srihari/Hardware_securiy/uart_TRIAL/Uart_trial/Uart_trial.runs/impl_1/design_1_wrapper.sysdef /home/srihari/Hardware_securiy/uart_TRIAL/Uart_trial/Uart_trial.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace /home/srihari/Hardware_securiy/uart_TRIAL/Uart_trial/Uart_trial.sdk -hwspec /home/srihari/Hardware_securiy/uart_TRIAL/Uart_trial/Uart_trial.sdk/design_1_wrapper.hdf
+open_bd_design {/home/srihari/Hardware_securiy/uart_TRIAL/Uart_trial/Uart_trial.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0}] [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_nets processing_system7_0_FCLK_CLK0]
+endgroup
+save_bd_design
+close_project

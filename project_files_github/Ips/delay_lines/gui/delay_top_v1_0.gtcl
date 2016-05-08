@@ -1,0 +1,2 @@
+# This file is automatically written.  Do not modify.
+proc gen_HDLPARAMETER_WIDTH_VALUE {clog2 } {expr $clog2(COARSE_DELAY_LENGTH)}
